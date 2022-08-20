@@ -1,5 +1,5 @@
 #---------------------------------------------------#
-## 更新：2022-08-20 05:51:26
+## 更新：2022-08-20 06:01:51
 ## 感谢：https://github.com/Hackl0us/SS-Rule-Snippet
 ## 链接：https://cdn.xmrth.one/link/ceXhuwjUo221A5DG?clash=1
 #---------------------------------------------------#
@@ -34,6 +34,8 @@ secret: ''
 
 
 proxies:
+  - {"name":"*唯一官网 xmrth.net * 国内加速官网 xmrth.vip *","type":"vmess","server":"https://t.me/xmrthcom1","port":443,"uuid":"c666bc1c-3d3f-3f2c-8bab-94a27516dd90","alterId":0,"cipher":"auto","udp":true}
+  - {"name":"*请开启自动更新订阅* *无法使用请更新订阅*","type":"vmess","server":"8.8.8.8","port":443,"uuid":"c666bc1c-3d3f-3f2c-8bab-94a27516dd90","alterId":0,"cipher":"auto","udp":true}
   - {"name":"香港501 中继","type":"vmess","server":"db.xmrthnode.com","port":42001,"uuid":"c666bc1c-3d3f-3f2c-8bab-94a27516dd90","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-opts":{"path":"/th","headers":{"Host":"61.176.215.75"}},"ws-path":"/th","ws-headers":{"Host":"61.176.215.75"}}
   - {"name":"香港502 中继","type":"vmess","server":"db.xmrthnode.com","port":42002,"uuid":"c666bc1c-3d3f-3f2c-8bab-94a27516dd90","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-opts":{"path":"/th","headers":{"Host":"61.176.215.75"}},"ws-path":"/th","ws-headers":{"Host":"61.176.215.75"}}
   - {"name":"HK 000","type":"vmess","server":"xmrh000.xmrth-node.xyz","port":15880,"uuid":"c666bc1c-3d3f-3f2c-8bab-94a27516dd90","alterId":0,"cipher":"auto","udp":true,"network":"ws","ws-opts":{"path":"/index","headers":{"Host":"87318706-ws.va.huya.com"}},"ws-path":"/index","ws-headers":{"Host":"87318706-ws.va.huya.com"}}
@@ -68,7 +70,9 @@ proxies:
 proxy-groups:
 -
   name: 🔰国外流量
-  type: select
+  type: url-test
+  url: https://www.youtube.com/
+  interval: 300
   proxies:
     - '*唯一官网 xmrth.net * 国内加速官网 xmrth.vip *'
     - '*请开启自动更新订阅* *无法使用请更新订阅*'
