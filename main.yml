@@ -70,9 +70,7 @@ proxies:
 proxy-groups:
 -
   name: 🔰国外流量
-  type: url-test
-  url: https://www.youtube.com/
-  interval: 300
+  type: select
   proxies:
     - '*唯一官网 xmrth.net * 国内加速官网 xmrth.vip *'
     - '*请开启自动更新订阅* *无法使用请更新订阅*'
