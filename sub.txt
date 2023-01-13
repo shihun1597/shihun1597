@@ -3,343 +3,863 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: :9090
+external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 地址1:ysbzc.link 本节点限速10M, server: s680.cmcuct.org, port: 30003, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s680.cmcuct.org}}}
-  - {name: 地址2:ysbzc.com 本节点限速20M, server: sd2.cmcuct.org, port: 30004, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sd2.cmcuct.org}}}
-  - {name: 🇬🇧 隧道-英国-x0.5, server: sd2.cmcuct.org, port: 17064, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sd2.cmcuct.org}}}
-  - {name: 🇭🇰 IEPL-香港HKT-x1.5, server: s680.cmcuct.org, port: 12149, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s680.cmcuct.org}}}
-  - {name: 🇮🇳 隧道-印度-x0.5, server: sd2.cmcuct.org, port: 12996, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sd2.cmcuct.org}}}
-  - {name: 🇨🇱 隧道-智利-x0.75, server: sd2.cmcuct.org, port: 36654, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sd2.cmcuct.org}}}
-  - {name: 🇭🇰 IEPL-香港BGP-x2.0, server: s680.cmcuct.org, port: 53680, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s680.cmcuct.org}}}
-  - {name: 🇭🇰 隧道-香港Scloud-x1.0, server: sd2.cmcuct.org, port: 21101, type: ss, cipher: chacha20-ietf-poly1305, password: bff75714-0861-43b1-958a-2cc09c2136fa}
-  - {name: 🇨🇳 隧道-台湾1-x1.0, server: sd2.cmcuct.org, port: 50978, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sd2.cmcuct.org}}}
-  - {name: 🇨🇳 IEPL-台湾2-x2.0, server: s680.cmcuct.org, port: 30222, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s680.cmcuct.org}}}
-  - {name: 🇻🇳 IEPL-越南河内-x2.0, server: s680.cmcuct.org, port: 30016, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s680.cmcuct.org}}}
-  - {name: 🇯🇵 IEPL-日本02-大阪-ss-x2.0, server: s680.cmcuct.org, port: 21104, type: ss, cipher: chacha20-ietf-poly1305, password: bff75714-0861-43b1-958a-2cc09c2136fa}
-  - {name: 🇯🇵 IEPL-日本02-大阪-v2-x2.0, server: s680.cmcuct.org, port: 21105, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s680.cmcuct.org}}}
-  - {name: 🇯🇵 隧道-日本01-东京-v2-x1.0, server: sd2.cmcuct.org, port: 50929, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sd2.cmcuct.org}}}
-  - {name: 🇯🇵 隧道-日本01-东京-ss-x1.0, server: sd2.cmcuct.org, port: 50930, type: ss, cipher: chacha20-ietf-poly1305, password: bff75714-0861-43b1-958a-2cc09c2136fa}
-  - {name: 🇰🇭 隧道-柬埔寨-x0.7, server: sd2.cmcuct.org, port: 11122, type: ss, cipher: chacha20-ietf-poly1305, password: bff75714-0861-43b1-958a-2cc09c2136fa}
-  - {name: 🇺🇸 IEPL-美国01-ss-x1.0, server: s680.cmcuct.org, port: 30006, type: ss, cipher: chacha20-ietf-poly1305, password: bff75714-0861-43b1-958a-2cc09c2136fa}
-  - {name: 🇺🇸 IEPL-美国01-v2-x1.0, server: s680.cmcuct.org, port: 30007, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s680.cmcuct.org}}}
-  - {name: 🇺🇸 IEPL-美国02-x1.0, server: s680.cmcuct.org, port: 30021, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s680.cmcuct.org}}}
-  - {name: 🇺🇸 隧道-美国01-v2-x1.0, server: sd2.cmcuct.org, port: 30007, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sd2.cmcuct.org}}}
-  - {name: 🇸🇬 IEPL-新加坡01-ss-x2.0, server: s680.cmcuct.org, port: 30008, type: ss, cipher: chacha20-ietf-poly1305, password: bff75714-0861-43b1-958a-2cc09c2136fa}
-  - {name: 🇸🇬 隧道-新加坡01-v2-x1.0, server: sd2.cmcuct.org, port: 30009, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sd2.cmcuct.org}}}
-  - {name: 🇸🇬 IEPL-新加坡02-v2-x2.0, server: s680.cmcuct.org, port: 36136, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s680.cmcuct.org}}}
-  - {name: 🇮🇹 IEPL-意大利-x1.5, server: s680.cmcuct.org, port: 30889, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s680.cmcuct.org}}}
-  - {name: 🇫🇷 IEPL-法国-x1.5, server: s680.cmcuct.org, port: 33926, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s680.cmcuct.org}}}
-  - {name: 🇲🇾 IEPL-马来西亚-x1.5, server: s680.cmcuct.org, port: 30020, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s680.cmcuct.org}}}
-  - {name: 🇷🇺 隧道-俄罗斯-ss-x0.5, server: sd2.cmcuct.org, port: 52141, type: ss, cipher: chacha20-ietf-poly1305, password: bff75714-0861-43b1-958a-2cc09c2136fa}
-  - {name: 🇷🇺 隧道-俄罗斯-v2-x0.5, server: sd2.cmcuct.org, port: 52142, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sd2.cmcuct.org}}}
-  - {name: 🇵🇭 隧道-菲律宾-x1.0, server: sd2.cmcuct.org, port: 11125, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sd2.cmcuct.org}}}
-  - {name: 🇩🇪 隧道-德国-x0.5, server: sd2.cmcuct.org, port: 50201, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sd2.cmcuct.org}}}
-  - {name: 🇦🇺 隧道-澳大利亚-x0.7, server: sd2.cmcuct.org, port: 11106, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sd2.cmcuct.org}}}
-  - {name: 🇹🇭 IEPL-泰国-x2.0, server: s680.cmcuct.org, port: 30017, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s680.cmcuct.org}}}
-  - {name: 🇰🇷 IEPL-韩国02KT-x2.0, server: s680.cmcuct.org, port: 30010, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s680.cmcuct.org}}}
-  - {name: 🇦🇷 隧道-阿根廷-x1.0, server: sd2.cmcuct.org, port: 30019, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sd2.cmcuct.org}}}
-  - {name: 🇸🇦 隧道-沙特-x0.7, server: sd2.cmcuct.org, port: 11115, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sd2.cmcuct.org}}}
-  - {name: 🇹🇷 IEPL-土耳其-x1.5, server: s680.cmcuct.org, port: 34364, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s680.cmcuct.org}}}
-  - {name: 🇧🇷 隧道-巴西1-x1.0, server: sd2.cmcuct.org, port: 30020, type: vmess, uuid: bff75714-0861-43b1-958a-2cc09c2136fa, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇹🇷 带【奈飞】字样的节点，完整解锁奈飞流媒体，支持奈飞非自制剧，建议自备奈飞全球区账号（非土耳其区等低价奈飞账号）, server: gzdx0.170203.xyz, port: 35146, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: ru03.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 电报群https://t.me/feiniaoyunjichang, server: gzdx0.170203.xyz, port: 14515, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: ru04.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡|02直连2, server: sg002.170203.xyz, port: 43543, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg002.170203.xyz}}, udp: true}
+  - {name: 🇸🇬 新加坡|03直连, server: sg03.170203.xyz, port: 34333, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg03.170203.xyz}}, udp: true}
+  - {name: 🇸🇬 新加坡|01直连, server: sg001.170203.xyz, port: 43543, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg001.170203.xyz}}, udp: true}
+  - {name: 🇸🇬 新加坡|02直连, server: sg02.170203.xyz, port: 43543, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg02.170203.xyz}}, udp: true}
+  - {name: 🇸🇬 新加坡|04直连, server: sg04.170203.xyz, port: 43543, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg04.170203.xyz}}, udp: true}
+  - {name: 🇸🇬 新加坡|05直连, server: sg05.170203.xyz, port: 43543, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg05.170203.xyz}}, udp: true}
+  - {name: 🇭🇰 新加坡|03|奈飞海港电信隧道3, server: gzdx0.170203.xyz, port: 26143, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: 0a01f3ad01.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 新加坡|02|奈飞广港电信隧道, server: gzdx1.170203.xyz, port: 52791, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: sgmax02.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 新加坡|04|奈飞广日电信隧道2, server: gzdx1.170203.xyz, port: 14909, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: sgmax04.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 新加坡|03|广日电信隧道2, server: gzdx0.170203.xyz, port: 42862, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: sgmax03.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 新加坡|03|广港电信隧道4, server: gzdx0.170203.xyz, port: 48567, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: sgmax03.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 新加坡|01|广日电信隧道, server: gzdx1.170203.xyz, port: 10593, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: sgmax01.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 新加坡|01|广港电信隧道2, server: gzdx0.170203.xyz, port: 11129, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: sgmax01.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 新加坡|01|海港电信隧道3, server: gzdx1.170203.xyz, port: 51130, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: sg01.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 新加坡|01|广港电信隧道4, server: gzdx1.170203.xyz, port: 21595, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: sg01.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 俄罗斯|03广港电信隧道, server: gzdx0.170203.xyz, port: 58978, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: ru03.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 台湾|01奈飞广港电信隧道, server: gzdx1.170203.xyz, port: 22951, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: tw01.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 台湾|01奈飞广日电信隧道3, server: gzdx0.170203.xyz, port: 10290, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: tw01.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国|01|广港电信隧道, server: gzdx0.170203.xyz, port: 60469, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: uk01.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 韩国|01直连, server: kr01.170203.xyz, port: 45453, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: kr01.170203.xyz}}, udp: true}
+  - {name: 🇰🇷 韩国|02直连, server: kr002.170203.xyz, port: 23245, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: kr002.170203.xyz}}, udp: true}
+  - {name: 🇬🇧 英国|02|直连, server: uk02.170203.xyz, port: 23245, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: uk02.170203.xyz}}, udp: true}
+  - {name: 🇯🇵 日本|02|直连2, server: jp02.170203.xyz, port: 23245, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp02.170203.xyz}}, udp: true}
+  - {name: 🇯🇵 日本|01|直连, server: jp001.170203.xyz, port: 23245, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp001.170203.xyz}}, udp: true}
+  - {name: 🇯🇵 日本|03|直连2, server: jp03.170203.xyz, port: 23245, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp03.170203.xyz}}, udp: true}
+  - {name: 🇯🇵 日本|04|直连2, server: jp04.170203.xyz, port: 23245, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp04.170203.xyz}}, udp: true}
+  - {name: 🇯🇵 日本|05|直连2, server: jp05.170203.xyz, port: 23245, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp05.170203.xyz}}, udp: true}
+  - {name: 🇯🇵 日本|06|直连2, server: jp06.170203.xyz, port: 23245, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp06.170203.xyz}}, udp: true}
+  - {name: 🇯🇵 日本|02|奈飞广日电信隧道2, server: gzdx0.170203.xyz, port: 22457, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: jpmax02.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本|04|广日电信隧道, server: gzdx0.170203.xyz, port: 54628, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: jpmax04.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本|01|广日电信隧道, server: gzdx0.170203.xyz, port: 43578, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: jp01.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本|01|湘日联通隧道, server: gzdx0.170203.xyz, port: 36103, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: jp01.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本|03|湘日联通隧道2, server: gzdx1.170203.xyz, port: 62680, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: jpmax03.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本|03|广日电信隧道2, server: gzdx0.170203.xyz, port: 18289, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: jpmax03.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本|02|奈飞湘日联通隧道, server: gzdx1.170203.xyz, port: 28977, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: jpmax02.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本|高速|01|广日电信隧道, server: gzdx0.170203.xyz, port: 64750, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: jpmax01.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本|高速|01|湘日联通隧道2, server: gzdx1.170203.xyz, port: 21116, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: jpmax01.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 美国|01|广港电信隧道0, server: gzdx1.170203.xyz, port: 57526, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: usmax01.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 美国|09广港电信隧道, server: gzdx1.170203.xyz, port: 14101, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: us09.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 美国|02|广日电信隧道, server: gzdx0.170203.xyz, port: 61473, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: usmax02.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 美国|03广日电信隧道, server: gzdx0.170203.xyz, port: 41607, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: us03.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 美国|04RN广港电信隧道, server: gzdx0.170203.xyz, port: 10030, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: usmax040.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|08奈飞AZ广港电信隧道(大带宽), server: gzdx0.170203.xyz, port: 42473, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax08.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|08奈飞广港电信隧道2(大带宽), server: gzdx1.170203.xyz, port: 54777, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax08.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|02奈飞广港电信隧道3, server: gzdx0.170203.xyz, port: 37400, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax02.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|04直连, server: hkmax04.170203.xyz, port: 45435, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax04.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|04|奈飞广港电信隧道4(大带宽), server: gzdx0.170203.xyz, port: 14675, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax04.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|04奈飞AZ广港电信隧道1(大带宽), server: gzdx1.170203.xyz, port: 57743, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax04.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|05AZ广港电信隧道1, server: gzdx0.170203.xyz, port: 50123, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax05.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|02奈飞AZ广港电信隧道, server: gzdx0.170203.xyz, port: 40389, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax02.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|05广港电信隧道3, server: gzdx1.170203.xyz, port: 34529, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax05.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|07广日电信隧道, server: gzdx0.170203.xyz, port: 47893, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax07.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|03直连, server: hkmax03.170203.xyz, port: 46534, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax03.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|05直连, server: hkmax05.170203.xyz, port: 45435, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax05.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|03|广港电信隧道, server: gzdx0.170203.xyz, port: 25199, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax03.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|09AZ广港电信隧道, server: gzdx1.170203.xyz, port: 19012, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax09.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|09AZ广港电信隧道1, server: gzdx0.170203.xyz, port: 33040, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax09.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|08奈飞AZ广港电信隧道3, server: gzdx0.170203.xyz, port: 62235, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax08.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港|01|AZ广港电信隧道, server: gzdx1.170203.xyz, port: 11400, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax01.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 中继 台湾 01, server: ttttasbhdjasbndwwww.woha11.cn, port: 9636, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ttttasbhdjasbndwwww.woha11.cn}}, udp: true}
+  - {name: 🇨🇳 中继 台湾 02, server: ttttasbhdjasbndwwww.woha11.cn, port: 9637, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ttttasbhdjasbndwwww.woha11.cn}}, udp: true}
+  - {name: 🇨🇳 中继 台湾 03, server: ttttasbhdjasbndwwww.woha11.cn, port: 9638, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ttttasbhdjasbndwwww.woha11.cn}}, udp: true}
+  - {name: 隧道 柬埔寨01, server: 124.225.88.34, port: 1787, type: ss, cipher: aes-256-gcm, password: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, udp: true}
+  - {name: 🇯🇵 隧道 日本Ⅰ, server: 120.195.181.13, port: 1776, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 隧道 日本Ⅱ, server: 42.7.24.11, port: 1777, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 北方中继 日本A, server: 42.7.24.11, port: 1771, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 北方中继 日本B, server: 42.7.24.11, port: 1772, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇯🇵 北方中继 日本C, server: 42.7.24.11, port: 1784, type: ss, cipher: aes-256-gcm, password: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, udp: true}
+  - {name: 🇯🇵 北方中继 日本D, server: 42.7.24.11, port: 1785, type: ss, cipher: aes-256-gcm, password: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, udp: true}
+  - {name: 🇯🇵 中继 日本 01, server: jsdbahbdp-zuiti.kkjchh.com, port: 1871, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jsdbahbdp-zuiti.kkjchh.com}}, udp: true}
+  - {name: 🇯🇵 中继 日本 02, server: jsdbahbdp-zuiti.kkjchh.com, port: 1872, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jsdbahbdp-zuiti.kkjchh.com}}, udp: true}
+  - {name: 🇸🇬 中继 新加坡 01, server: wwws-sdnasd-sdnxaknd-sdakjn.kkjchh.com, port: 1873, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: wwws-sdnasd-sdnxaknd-sdakjn.kkjchh.com}}, udp: true}
+  - {name: 🇸🇬 中继 新加坡 02, server: wwws-sdnasd-sdnxaknd-sdakjn.kkjchh.com, port: 1874, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: wwws-sdnasd-sdnxaknd-sdakjn.kkjchh.com}}, udp: true}
+  - {name: 🇸🇬 中继 新加坡 03, server: wwws-sdnasd-sdnxaknd-sdakjn.kkjchh.com, port: 1875, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: wwws-sdnasd-sdnxaknd-sdakjn.kkjchh.com}}, udp: true}
+  - {name: 🇸🇬 中继 新加坡 04, server: 120.195.181.13, port: 1782, type: ss, cipher: aes-256-gcm, password: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, udp: true}
+  - {name: 🇸🇬 中继 新加坡 05, server: 120.195.181.13, port: 1783, type: ss, cipher: aes-256-gcm, password: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, udp: true}
+  - {name: 🇺🇲 中继 美国 01, server: wwws-sdnasd-sdnxaknd-sdakjn.kkjchh.com, port: 1876, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: wwws-sdnasd-sdnxaknd-sdakjn.kkjchh.com}}, udp: true}
+  - {name: 🇺🇲 中继 美国 02, server: wwws-sdnasd-sdnxaknd-sdakjn.kkjchh.com, port: 1877, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: wwws-sdnasd-sdnxaknd-sdakjn.kkjchh.com}}, udp: true}
+  - {name: 🇺🇲 中继 美国 03, server: wwws-sdnasd-sdnxaknd-sdakjn.kkjchh.com, port: 1878, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: wwws-sdnasd-sdnxaknd-sdakjn.kkjchh.com}}, udp: true}
+  - {name: 🇺🇲 中继 美国 04, server: wwws-sdnasd-sdnxaknd-sdakjn.kkjchh.com, port: 1879, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: wwws-sdnasd-sdnxaknd-sdakjn.kkjchh.com}}, udp: true}
+  - {name: 🇺🇲 中继 美国 05, server: wwws-sdnasd-sdnxaknd-sdakjn.kkjchh.com, port: 1870, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇭🇰 中继 香港 01, server: 120.195.181.13, port: 2381, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇭🇰 中继 香港 02, server: 124.225.88.34, port: 2382, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇭🇰 中继 香港 03, server: 124.225.88.34, port: 2383, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇭🇰 中继 香港 04, server: 124.225.88.34, port: 2384, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇭🇰 中继 香港 05, server: 120.195.181.13, port: 2385, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇭🇰 中继 香港 06, server: 120.195.181.13, port: 2386, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇭🇰 中继 香港 07, server: 120.195.181.13, port: 2387, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇭🇰 中继 香港 08, server: 120.195.181.13, port: 2388, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇭🇰 中继 香港 09, server: 120.195.181.13, port: 2389, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇭🇰 中继 香港 10, server: 120.195.181.13, port: 2380, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇭🇰 中继 香港 11, server: 120.195.181.13, port: 6621, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇩🇪 隧道 德国Ⅰ, server: 120.195.181.13, port: 1778, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇳🇱 隧道 荷兰Ⅰ, server: 120.195.181.13, port: 1773, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇬🇧 隧道 英国Ⅰ, server: 120.195.181.13, port: 1779, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇮🇳 隧道 印度Ⅰ, server: 120.195.181.13, port: 1780, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇨🇭 隧道 瑞士Ⅰ, server: 120.195.181.13, port: 1774, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇦🇺 隧道 澳大利亚Ⅰ, server: 120.195.181.13, port: 1775, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇹🇷 隧道 土耳其Ⅰ, server: 120.195.181.13, port: 1781, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇲🇾 中继 马来西亚 01, server: 124.225.88.34, port: 3761, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 地址1:ysbzc.link 本节点限速10M
-      - 地址2:ysbzc.com 本节点限速20M
-      - 🇬🇧 隧道-英国-x0.5
-      - 🇭🇰 IEPL-香港HKT-x1.5
-      - 🇮🇳 隧道-印度-x0.5
-      - 🇨🇱 隧道-智利-x0.75
-      - 🇭🇰 IEPL-香港BGP-x2.0
-      - 🇭🇰 隧道-香港Scloud-x1.0
-      - 🇨🇳 隧道-台湾1-x1.0
-      - 🇨🇳 IEPL-台湾2-x2.0
-      - 🇻🇳 IEPL-越南河内-x2.0
-      - 🇯🇵 IEPL-日本02-大阪-ss-x2.0
-      - 🇯🇵 IEPL-日本02-大阪-v2-x2.0
-      - 🇯🇵 隧道-日本01-东京-v2-x1.0
-      - 🇯🇵 隧道-日本01-东京-ss-x1.0
-      - 🇰🇭 隧道-柬埔寨-x0.7
-      - 🇺🇸 IEPL-美国01-ss-x1.0
-      - 🇺🇸 IEPL-美国01-v2-x1.0
-      - 🇺🇸 IEPL-美国02-x1.0
-      - 🇺🇸 隧道-美国01-v2-x1.0
-      - 🇸🇬 IEPL-新加坡01-ss-x2.0
-      - 🇸🇬 隧道-新加坡01-v2-x1.0
-      - 🇸🇬 IEPL-新加坡02-v2-x2.0
-      - 🇮🇹 IEPL-意大利-x1.5
-      - 🇫🇷 IEPL-法国-x1.5
-      - 🇲🇾 IEPL-马来西亚-x1.5
-      - 🇷🇺 隧道-俄罗斯-ss-x0.5
-      - 🇷🇺 隧道-俄罗斯-v2-x0.5
-      - 🇵🇭 隧道-菲律宾-x1.0
-      - 🇩🇪 隧道-德国-x0.5
-      - 🇦🇺 隧道-澳大利亚-x0.7
-      - 🇹🇭 IEPL-泰国-x2.0
-      - 🇰🇷 IEPL-韩国02KT-x2.0
-      - 🇦🇷 隧道-阿根廷-x1.0
-      - 🇸🇦 隧道-沙特-x0.7
-      - 🇹🇷 IEPL-土耳其-x1.5
-      - 🇧🇷 隧道-巴西1-x1.0
+      - 🇹🇷 带【奈飞】字样的节点，完整解锁奈飞流媒体，支持奈飞非自制剧，建议自备奈飞全球区账号（非土耳其区等低价奈飞账号）
+      - 电报群https://t.me/feiniaoyunjichang
+      - 🇸🇬 新加坡|02直连2
+      - 🇸🇬 新加坡|03直连
+      - 🇸🇬 新加坡|01直连
+      - 🇸🇬 新加坡|02直连
+      - 🇸🇬 新加坡|04直连
+      - 🇸🇬 新加坡|05直连
+      - 🇭🇰 新加坡|03|奈飞海港电信隧道3
+      - 🇭🇰 新加坡|02|奈飞广港电信隧道
+      - 🇯🇵 新加坡|04|奈飞广日电信隧道2
+      - 🇯🇵 新加坡|03|广日电信隧道2
+      - 🇭🇰 新加坡|03|广港电信隧道4
+      - 🇯🇵 新加坡|01|广日电信隧道
+      - 🇭🇰 新加坡|01|广港电信隧道2
+      - 🇭🇰 新加坡|01|海港电信隧道3
+      - 🇭🇰 新加坡|01|广港电信隧道4
+      - 🇭🇰 俄罗斯|03广港电信隧道
+      - 🇭🇰 台湾|01奈飞广港电信隧道
+      - 🇯🇵 台湾|01奈飞广日电信隧道3
+      - 🇬🇧 英国|01|广港电信隧道
+      - 🇰🇷 韩国|01直连
+      - 🇰🇷 韩国|02直连
+      - 🇬🇧 英国|02|直连
+      - 🇯🇵 日本|02|直连2
+      - 🇯🇵 日本|01|直连
+      - 🇯🇵 日本|03|直连2
+      - 🇯🇵 日本|04|直连2
+      - 🇯🇵 日本|05|直连2
+      - 🇯🇵 日本|06|直连2
+      - 🇯🇵 日本|02|奈飞广日电信隧道2
+      - 🇯🇵 日本|04|广日电信隧道
+      - 🇯🇵 日本|01|广日电信隧道
+      - 🇯🇵 日本|01|湘日联通隧道
+      - 🇯🇵 日本|03|湘日联通隧道2
+      - 🇯🇵 日本|03|广日电信隧道2
+      - 🇯🇵 日本|02|奈飞湘日联通隧道
+      - 🇯🇵 日本|高速|01|广日电信隧道
+      - 🇯🇵 日本|高速|01|湘日联通隧道2
+      - 🇭🇰 美国|01|广港电信隧道0
+      - 🇭🇰 美国|09广港电信隧道
+      - 🇯🇵 美国|02|广日电信隧道
+      - 🇯🇵 美国|03广日电信隧道
+      - 🇭🇰 美国|04RN广港电信隧道
+      - 🇭🇰 香港|08奈飞AZ广港电信隧道(大带宽)
+      - 🇭🇰 香港|08奈飞广港电信隧道2(大带宽)
+      - 🇭🇰 香港|02奈飞广港电信隧道3
+      - 🇭🇰 香港|04直连
+      - 🇭🇰 香港|04|奈飞广港电信隧道4(大带宽)
+      - 🇭🇰 香港|04奈飞AZ广港电信隧道1(大带宽)
+      - 🇭🇰 香港|05AZ广港电信隧道1
+      - 🇭🇰 香港|02奈飞AZ广港电信隧道
+      - 🇭🇰 香港|05广港电信隧道3
+      - 🇭🇰 香港|07广日电信隧道
+      - 🇭🇰 香港|03直连
+      - 🇭🇰 香港|05直连
+      - 🇭🇰 香港|03|广港电信隧道
+      - 🇭🇰 香港|09AZ广港电信隧道
+      - 🇭🇰 香港|09AZ广港电信隧道1
+      - 🇭🇰 香港|08奈飞AZ广港电信隧道3
+      - 🇭🇰 香港|01|AZ广港电信隧道
+      - 🇨🇳 中继 台湾 01
+      - 🇨🇳 中继 台湾 02
+      - 🇨🇳 中继 台湾 03
+      - 隧道 柬埔寨01
+      - 🇯🇵 隧道 日本Ⅰ
+      - 🇯🇵 隧道 日本Ⅱ
+      - 🇯🇵 北方中继 日本A
+      - 🇯🇵 北方中继 日本B
+      - 🇯🇵 北方中继 日本C
+      - 🇯🇵 北方中继 日本D
+      - 🇯🇵 中继 日本 01
+      - 🇯🇵 中继 日本 02
+      - 🇸🇬 中继 新加坡 01
+      - 🇸🇬 中继 新加坡 02
+      - 🇸🇬 中继 新加坡 03
+      - 🇸🇬 中继 新加坡 04
+      - 🇸🇬 中继 新加坡 05
+      - 🇺🇲 中继 美国 01
+      - 🇺🇲 中继 美国 02
+      - 🇺🇲 中继 美国 03
+      - 🇺🇲 中继 美国 04
+      - 🇺🇲 中继 美国 05
+      - 🇭🇰 中继 香港 01
+      - 🇭🇰 中继 香港 02
+      - 🇭🇰 中继 香港 03
+      - 🇭🇰 中继 香港 04
+      - 🇭🇰 中继 香港 05
+      - 🇭🇰 中继 香港 06
+      - 🇭🇰 中继 香港 07
+      - 🇭🇰 中继 香港 08
+      - 🇭🇰 中继 香港 09
+      - 🇭🇰 中继 香港 10
+      - 🇭🇰 中继 香港 11
+      - 🇩🇪 隧道 德国Ⅰ
+      - 🇳🇱 隧道 荷兰Ⅰ
+      - 🇬🇧 隧道 英国Ⅰ
+      - 🇮🇳 隧道 印度Ⅰ
+      - 🇨🇭 隧道 瑞士Ⅰ
+      - 🇦🇺 隧道 澳大利亚Ⅰ
+      - 🇹🇷 隧道 土耳其Ⅰ
+      - 🇲🇾 中继 马来西亚 01
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 地址1:ysbzc.link 本节点限速10M
-      - 地址2:ysbzc.com 本节点限速20M
-      - 🇬🇧 隧道-英国-x0.5
-      - 🇭🇰 IEPL-香港HKT-x1.5
-      - 🇮🇳 隧道-印度-x0.5
-      - 🇨🇱 隧道-智利-x0.75
-      - 🇭🇰 IEPL-香港BGP-x2.0
-      - 🇭🇰 隧道-香港Scloud-x1.0
-      - 🇨🇳 隧道-台湾1-x1.0
-      - 🇨🇳 IEPL-台湾2-x2.0
-      - 🇻🇳 IEPL-越南河内-x2.0
-      - 🇯🇵 IEPL-日本02-大阪-ss-x2.0
-      - 🇯🇵 IEPL-日本02-大阪-v2-x2.0
-      - 🇯🇵 隧道-日本01-东京-v2-x1.0
-      - 🇯🇵 隧道-日本01-东京-ss-x1.0
-      - 🇰🇭 隧道-柬埔寨-x0.7
-      - 🇺🇸 IEPL-美国01-ss-x1.0
-      - 🇺🇸 IEPL-美国01-v2-x1.0
-      - 🇺🇸 IEPL-美国02-x1.0
-      - 🇺🇸 隧道-美国01-v2-x1.0
-      - 🇸🇬 IEPL-新加坡01-ss-x2.0
-      - 🇸🇬 隧道-新加坡01-v2-x1.0
-      - 🇸🇬 IEPL-新加坡02-v2-x2.0
-      - 🇮🇹 IEPL-意大利-x1.5
-      - 🇫🇷 IEPL-法国-x1.5
-      - 🇲🇾 IEPL-马来西亚-x1.5
-      - 🇷🇺 隧道-俄罗斯-ss-x0.5
-      - 🇷🇺 隧道-俄罗斯-v2-x0.5
-      - 🇵🇭 隧道-菲律宾-x1.0
-      - 🇩🇪 隧道-德国-x0.5
-      - 🇦🇺 隧道-澳大利亚-x0.7
-      - 🇹🇭 IEPL-泰国-x2.0
-      - 🇰🇷 IEPL-韩国02KT-x2.0
-      - 🇦🇷 隧道-阿根廷-x1.0
-      - 🇸🇦 隧道-沙特-x0.7
-      - 🇹🇷 IEPL-土耳其-x1.5
-      - 🇧🇷 隧道-巴西1-x1.0
+      - 🇹🇷 带【奈飞】字样的节点，完整解锁奈飞流媒体，支持奈飞非自制剧，建议自备奈飞全球区账号（非土耳其区等低价奈飞账号）
+      - 电报群https://t.me/feiniaoyunjichang
+      - 🇸🇬 新加坡|02直连2
+      - 🇸🇬 新加坡|03直连
+      - 🇸🇬 新加坡|01直连
+      - 🇸🇬 新加坡|02直连
+      - 🇸🇬 新加坡|04直连
+      - 🇸🇬 新加坡|05直连
+      - 🇭🇰 新加坡|03|奈飞海港电信隧道3
+      - 🇭🇰 新加坡|02|奈飞广港电信隧道
+      - 🇯🇵 新加坡|04|奈飞广日电信隧道2
+      - 🇯🇵 新加坡|03|广日电信隧道2
+      - 🇭🇰 新加坡|03|广港电信隧道4
+      - 🇯🇵 新加坡|01|广日电信隧道
+      - 🇭🇰 新加坡|01|广港电信隧道2
+      - 🇭🇰 新加坡|01|海港电信隧道3
+      - 🇭🇰 新加坡|01|广港电信隧道4
+      - 🇭🇰 俄罗斯|03广港电信隧道
+      - 🇭🇰 台湾|01奈飞广港电信隧道
+      - 🇯🇵 台湾|01奈飞广日电信隧道3
+      - 🇬🇧 英国|01|广港电信隧道
+      - 🇰🇷 韩国|01直连
+      - 🇰🇷 韩国|02直连
+      - 🇬🇧 英国|02|直连
+      - 🇯🇵 日本|02|直连2
+      - 🇯🇵 日本|01|直连
+      - 🇯🇵 日本|03|直连2
+      - 🇯🇵 日本|04|直连2
+      - 🇯🇵 日本|05|直连2
+      - 🇯🇵 日本|06|直连2
+      - 🇯🇵 日本|02|奈飞广日电信隧道2
+      - 🇯🇵 日本|04|广日电信隧道
+      - 🇯🇵 日本|01|广日电信隧道
+      - 🇯🇵 日本|01|湘日联通隧道
+      - 🇯🇵 日本|03|湘日联通隧道2
+      - 🇯🇵 日本|03|广日电信隧道2
+      - 🇯🇵 日本|02|奈飞湘日联通隧道
+      - 🇯🇵 日本|高速|01|广日电信隧道
+      - 🇯🇵 日本|高速|01|湘日联通隧道2
+      - 🇭🇰 美国|01|广港电信隧道0
+      - 🇭🇰 美国|09广港电信隧道
+      - 🇯🇵 美国|02|广日电信隧道
+      - 🇯🇵 美国|03广日电信隧道
+      - 🇭🇰 美国|04RN广港电信隧道
+      - 🇭🇰 香港|08奈飞AZ广港电信隧道(大带宽)
+      - 🇭🇰 香港|08奈飞广港电信隧道2(大带宽)
+      - 🇭🇰 香港|02奈飞广港电信隧道3
+      - 🇭🇰 香港|04直连
+      - 🇭🇰 香港|04|奈飞广港电信隧道4(大带宽)
+      - 🇭🇰 香港|04奈飞AZ广港电信隧道1(大带宽)
+      - 🇭🇰 香港|05AZ广港电信隧道1
+      - 🇭🇰 香港|02奈飞AZ广港电信隧道
+      - 🇭🇰 香港|05广港电信隧道3
+      - 🇭🇰 香港|07广日电信隧道
+      - 🇭🇰 香港|03直连
+      - 🇭🇰 香港|05直连
+      - 🇭🇰 香港|03|广港电信隧道
+      - 🇭🇰 香港|09AZ广港电信隧道
+      - 🇭🇰 香港|09AZ广港电信隧道1
+      - 🇭🇰 香港|08奈飞AZ广港电信隧道3
+      - 🇭🇰 香港|01|AZ广港电信隧道
+      - 🇨🇳 中继 台湾 01
+      - 🇨🇳 中继 台湾 02
+      - 🇨🇳 中继 台湾 03
+      - 隧道 柬埔寨01
+      - 🇯🇵 隧道 日本Ⅰ
+      - 🇯🇵 隧道 日本Ⅱ
+      - 🇯🇵 北方中继 日本A
+      - 🇯🇵 北方中继 日本B
+      - 🇯🇵 北方中继 日本C
+      - 🇯🇵 北方中继 日本D
+      - 🇯🇵 中继 日本 01
+      - 🇯🇵 中继 日本 02
+      - 🇸🇬 中继 新加坡 01
+      - 🇸🇬 中继 新加坡 02
+      - 🇸🇬 中继 新加坡 03
+      - 🇸🇬 中继 新加坡 04
+      - 🇸🇬 中继 新加坡 05
+      - 🇺🇲 中继 美国 01
+      - 🇺🇲 中继 美国 02
+      - 🇺🇲 中继 美国 03
+      - 🇺🇲 中继 美国 04
+      - 🇺🇲 中继 美国 05
+      - 🇭🇰 中继 香港 01
+      - 🇭🇰 中继 香港 02
+      - 🇭🇰 中继 香港 03
+      - 🇭🇰 中继 香港 04
+      - 🇭🇰 中继 香港 05
+      - 🇭🇰 中继 香港 06
+      - 🇭🇰 中继 香港 07
+      - 🇭🇰 中继 香港 08
+      - 🇭🇰 中继 香港 09
+      - 🇭🇰 中继 香港 10
+      - 🇭🇰 中继 香港 11
+      - 🇩🇪 隧道 德国Ⅰ
+      - 🇳🇱 隧道 荷兰Ⅰ
+      - 🇬🇧 隧道 英国Ⅰ
+      - 🇮🇳 隧道 印度Ⅰ
+      - 🇨🇭 隧道 瑞士Ⅰ
+      - 🇦🇺 隧道 澳大利亚Ⅰ
+      - 🇹🇷 隧道 土耳其Ⅰ
+      - 🇲🇾 中继 马来西亚 01
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 地址1:ysbzc.link 本节点限速10M
-      - 地址2:ysbzc.com 本节点限速20M
-      - 🇬🇧 隧道-英国-x0.5
-      - 🇭🇰 IEPL-香港HKT-x1.5
-      - 🇮🇳 隧道-印度-x0.5
-      - 🇨🇱 隧道-智利-x0.75
-      - 🇭🇰 IEPL-香港BGP-x2.0
-      - 🇭🇰 隧道-香港Scloud-x1.0
-      - 🇨🇳 隧道-台湾1-x1.0
-      - 🇨🇳 IEPL-台湾2-x2.0
-      - 🇻🇳 IEPL-越南河内-x2.0
-      - 🇯🇵 IEPL-日本02-大阪-ss-x2.0
-      - 🇯🇵 IEPL-日本02-大阪-v2-x2.0
-      - 🇯🇵 隧道-日本01-东京-v2-x1.0
-      - 🇯🇵 隧道-日本01-东京-ss-x1.0
-      - 🇰🇭 隧道-柬埔寨-x0.7
-      - 🇺🇸 IEPL-美国01-ss-x1.0
-      - 🇺🇸 IEPL-美国01-v2-x1.0
-      - 🇺🇸 IEPL-美国02-x1.0
-      - 🇺🇸 隧道-美国01-v2-x1.0
-      - 🇸🇬 IEPL-新加坡01-ss-x2.0
-      - 🇸🇬 隧道-新加坡01-v2-x1.0
-      - 🇸🇬 IEPL-新加坡02-v2-x2.0
-      - 🇮🇹 IEPL-意大利-x1.5
-      - 🇫🇷 IEPL-法国-x1.5
-      - 🇲🇾 IEPL-马来西亚-x1.5
-      - 🇷🇺 隧道-俄罗斯-ss-x0.5
-      - 🇷🇺 隧道-俄罗斯-v2-x0.5
-      - 🇵🇭 隧道-菲律宾-x1.0
-      - 🇩🇪 隧道-德国-x0.5
-      - 🇦🇺 隧道-澳大利亚-x0.7
-      - 🇹🇭 IEPL-泰国-x2.0
-      - 🇰🇷 IEPL-韩国02KT-x2.0
-      - 🇦🇷 隧道-阿根廷-x1.0
-      - 🇸🇦 隧道-沙特-x0.7
-      - 🇹🇷 IEPL-土耳其-x1.5
-      - 🇧🇷 隧道-巴西1-x1.0
+      - 🇹🇷 带【奈飞】字样的节点，完整解锁奈飞流媒体，支持奈飞非自制剧，建议自备奈飞全球区账号（非土耳其区等低价奈飞账号）
+      - 电报群https://t.me/feiniaoyunjichang
+      - 🇸🇬 新加坡|02直连2
+      - 🇸🇬 新加坡|03直连
+      - 🇸🇬 新加坡|01直连
+      - 🇸🇬 新加坡|02直连
+      - 🇸🇬 新加坡|04直连
+      - 🇸🇬 新加坡|05直连
+      - 🇭🇰 新加坡|03|奈飞海港电信隧道3
+      - 🇭🇰 新加坡|02|奈飞广港电信隧道
+      - 🇯🇵 新加坡|04|奈飞广日电信隧道2
+      - 🇯🇵 新加坡|03|广日电信隧道2
+      - 🇭🇰 新加坡|03|广港电信隧道4
+      - 🇯🇵 新加坡|01|广日电信隧道
+      - 🇭🇰 新加坡|01|广港电信隧道2
+      - 🇭🇰 新加坡|01|海港电信隧道3
+      - 🇭🇰 新加坡|01|广港电信隧道4
+      - 🇭🇰 俄罗斯|03广港电信隧道
+      - 🇭🇰 台湾|01奈飞广港电信隧道
+      - 🇯🇵 台湾|01奈飞广日电信隧道3
+      - 🇬🇧 英国|01|广港电信隧道
+      - 🇰🇷 韩国|01直连
+      - 🇰🇷 韩国|02直连
+      - 🇬🇧 英国|02|直连
+      - 🇯🇵 日本|02|直连2
+      - 🇯🇵 日本|01|直连
+      - 🇯🇵 日本|03|直连2
+      - 🇯🇵 日本|04|直连2
+      - 🇯🇵 日本|05|直连2
+      - 🇯🇵 日本|06|直连2
+      - 🇯🇵 日本|02|奈飞广日电信隧道2
+      - 🇯🇵 日本|04|广日电信隧道
+      - 🇯🇵 日本|01|广日电信隧道
+      - 🇯🇵 日本|01|湘日联通隧道
+      - 🇯🇵 日本|03|湘日联通隧道2
+      - 🇯🇵 日本|03|广日电信隧道2
+      - 🇯🇵 日本|02|奈飞湘日联通隧道
+      - 🇯🇵 日本|高速|01|广日电信隧道
+      - 🇯🇵 日本|高速|01|湘日联通隧道2
+      - 🇭🇰 美国|01|广港电信隧道0
+      - 🇭🇰 美国|09广港电信隧道
+      - 🇯🇵 美国|02|广日电信隧道
+      - 🇯🇵 美国|03广日电信隧道
+      - 🇭🇰 美国|04RN广港电信隧道
+      - 🇭🇰 香港|08奈飞AZ广港电信隧道(大带宽)
+      - 🇭🇰 香港|08奈飞广港电信隧道2(大带宽)
+      - 🇭🇰 香港|02奈飞广港电信隧道3
+      - 🇭🇰 香港|04直连
+      - 🇭🇰 香港|04|奈飞广港电信隧道4(大带宽)
+      - 🇭🇰 香港|04奈飞AZ广港电信隧道1(大带宽)
+      - 🇭🇰 香港|05AZ广港电信隧道1
+      - 🇭🇰 香港|02奈飞AZ广港电信隧道
+      - 🇭🇰 香港|05广港电信隧道3
+      - 🇭🇰 香港|07广日电信隧道
+      - 🇭🇰 香港|03直连
+      - 🇭🇰 香港|05直连
+      - 🇭🇰 香港|03|广港电信隧道
+      - 🇭🇰 香港|09AZ广港电信隧道
+      - 🇭🇰 香港|09AZ广港电信隧道1
+      - 🇭🇰 香港|08奈飞AZ广港电信隧道3
+      - 🇭🇰 香港|01|AZ广港电信隧道
+      - 🇨🇳 中继 台湾 01
+      - 🇨🇳 中继 台湾 02
+      - 🇨🇳 中继 台湾 03
+      - 隧道 柬埔寨01
+      - 🇯🇵 隧道 日本Ⅰ
+      - 🇯🇵 隧道 日本Ⅱ
+      - 🇯🇵 北方中继 日本A
+      - 🇯🇵 北方中继 日本B
+      - 🇯🇵 北方中继 日本C
+      - 🇯🇵 北方中继 日本D
+      - 🇯🇵 中继 日本 01
+      - 🇯🇵 中继 日本 02
+      - 🇸🇬 中继 新加坡 01
+      - 🇸🇬 中继 新加坡 02
+      - 🇸🇬 中继 新加坡 03
+      - 🇸🇬 中继 新加坡 04
+      - 🇸🇬 中继 新加坡 05
+      - 🇺🇲 中继 美国 01
+      - 🇺🇲 中继 美国 02
+      - 🇺🇲 中继 美国 03
+      - 🇺🇲 中继 美国 04
+      - 🇺🇲 中继 美国 05
+      - 🇭🇰 中继 香港 01
+      - 🇭🇰 中继 香港 02
+      - 🇭🇰 中继 香港 03
+      - 🇭🇰 中继 香港 04
+      - 🇭🇰 中继 香港 05
+      - 🇭🇰 中继 香港 06
+      - 🇭🇰 中继 香港 07
+      - 🇭🇰 中继 香港 08
+      - 🇭🇰 中继 香港 09
+      - 🇭🇰 中继 香港 10
+      - 🇭🇰 中继 香港 11
+      - 🇩🇪 隧道 德国Ⅰ
+      - 🇳🇱 隧道 荷兰Ⅰ
+      - 🇬🇧 隧道 英国Ⅰ
+      - 🇮🇳 隧道 印度Ⅰ
+      - 🇨🇭 隧道 瑞士Ⅰ
+      - 🇦🇺 隧道 澳大利亚Ⅰ
+      - 🇹🇷 隧道 土耳其Ⅰ
+      - 🇲🇾 中继 马来西亚 01
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 地址1:ysbzc.link 本节点限速10M
-      - 地址2:ysbzc.com 本节点限速20M
-      - 🇬🇧 隧道-英国-x0.5
-      - 🇭🇰 IEPL-香港HKT-x1.5
-      - 🇮🇳 隧道-印度-x0.5
-      - 🇨🇱 隧道-智利-x0.75
-      - 🇭🇰 IEPL-香港BGP-x2.0
-      - 🇭🇰 隧道-香港Scloud-x1.0
-      - 🇨🇳 隧道-台湾1-x1.0
-      - 🇨🇳 IEPL-台湾2-x2.0
-      - 🇻🇳 IEPL-越南河内-x2.0
-      - 🇯🇵 IEPL-日本02-大阪-ss-x2.0
-      - 🇯🇵 IEPL-日本02-大阪-v2-x2.0
-      - 🇯🇵 隧道-日本01-东京-v2-x1.0
-      - 🇯🇵 隧道-日本01-东京-ss-x1.0
-      - 🇰🇭 隧道-柬埔寨-x0.7
-      - 🇺🇸 IEPL-美国01-ss-x1.0
-      - 🇺🇸 IEPL-美国01-v2-x1.0
-      - 🇺🇸 IEPL-美国02-x1.0
-      - 🇺🇸 隧道-美国01-v2-x1.0
-      - 🇸🇬 IEPL-新加坡01-ss-x2.0
-      - 🇸🇬 隧道-新加坡01-v2-x1.0
-      - 🇸🇬 IEPL-新加坡02-v2-x2.0
-      - 🇮🇹 IEPL-意大利-x1.5
-      - 🇫🇷 IEPL-法国-x1.5
-      - 🇲🇾 IEPL-马来西亚-x1.5
-      - 🇷🇺 隧道-俄罗斯-ss-x0.5
-      - 🇷🇺 隧道-俄罗斯-v2-x0.5
-      - 🇵🇭 隧道-菲律宾-x1.0
-      - 🇩🇪 隧道-德国-x0.5
-      - 🇦🇺 隧道-澳大利亚-x0.7
-      - 🇹🇭 IEPL-泰国-x2.0
-      - 🇰🇷 IEPL-韩国02KT-x2.0
-      - 🇦🇷 隧道-阿根廷-x1.0
-      - 🇸🇦 隧道-沙特-x0.7
-      - 🇹🇷 IEPL-土耳其-x1.5
-      - 🇧🇷 隧道-巴西1-x1.0
+      - 🇹🇷 带【奈飞】字样的节点，完整解锁奈飞流媒体，支持奈飞非自制剧，建议自备奈飞全球区账号（非土耳其区等低价奈飞账号）
+      - 电报群https://t.me/feiniaoyunjichang
+      - 🇸🇬 新加坡|02直连2
+      - 🇸🇬 新加坡|03直连
+      - 🇸🇬 新加坡|01直连
+      - 🇸🇬 新加坡|02直连
+      - 🇸🇬 新加坡|04直连
+      - 🇸🇬 新加坡|05直连
+      - 🇭🇰 新加坡|03|奈飞海港电信隧道3
+      - 🇭🇰 新加坡|02|奈飞广港电信隧道
+      - 🇯🇵 新加坡|04|奈飞广日电信隧道2
+      - 🇯🇵 新加坡|03|广日电信隧道2
+      - 🇭🇰 新加坡|03|广港电信隧道4
+      - 🇯🇵 新加坡|01|广日电信隧道
+      - 🇭🇰 新加坡|01|广港电信隧道2
+      - 🇭🇰 新加坡|01|海港电信隧道3
+      - 🇭🇰 新加坡|01|广港电信隧道4
+      - 🇭🇰 俄罗斯|03广港电信隧道
+      - 🇭🇰 台湾|01奈飞广港电信隧道
+      - 🇯🇵 台湾|01奈飞广日电信隧道3
+      - 🇬🇧 英国|01|广港电信隧道
+      - 🇰🇷 韩国|01直连
+      - 🇰🇷 韩国|02直连
+      - 🇬🇧 英国|02|直连
+      - 🇯🇵 日本|02|直连2
+      - 🇯🇵 日本|01|直连
+      - 🇯🇵 日本|03|直连2
+      - 🇯🇵 日本|04|直连2
+      - 🇯🇵 日本|05|直连2
+      - 🇯🇵 日本|06|直连2
+      - 🇯🇵 日本|02|奈飞广日电信隧道2
+      - 🇯🇵 日本|04|广日电信隧道
+      - 🇯🇵 日本|01|广日电信隧道
+      - 🇯🇵 日本|01|湘日联通隧道
+      - 🇯🇵 日本|03|湘日联通隧道2
+      - 🇯🇵 日本|03|广日电信隧道2
+      - 🇯🇵 日本|02|奈飞湘日联通隧道
+      - 🇯🇵 日本|高速|01|广日电信隧道
+      - 🇯🇵 日本|高速|01|湘日联通隧道2
+      - 🇭🇰 美国|01|广港电信隧道0
+      - 🇭🇰 美国|09广港电信隧道
+      - 🇯🇵 美国|02|广日电信隧道
+      - 🇯🇵 美国|03广日电信隧道
+      - 🇭🇰 美国|04RN广港电信隧道
+      - 🇭🇰 香港|08奈飞AZ广港电信隧道(大带宽)
+      - 🇭🇰 香港|08奈飞广港电信隧道2(大带宽)
+      - 🇭🇰 香港|02奈飞广港电信隧道3
+      - 🇭🇰 香港|04直连
+      - 🇭🇰 香港|04|奈飞广港电信隧道4(大带宽)
+      - 🇭🇰 香港|04奈飞AZ广港电信隧道1(大带宽)
+      - 🇭🇰 香港|05AZ广港电信隧道1
+      - 🇭🇰 香港|02奈飞AZ广港电信隧道
+      - 🇭🇰 香港|05广港电信隧道3
+      - 🇭🇰 香港|07广日电信隧道
+      - 🇭🇰 香港|03直连
+      - 🇭🇰 香港|05直连
+      - 🇭🇰 香港|03|广港电信隧道
+      - 🇭🇰 香港|09AZ广港电信隧道
+      - 🇭🇰 香港|09AZ广港电信隧道1
+      - 🇭🇰 香港|08奈飞AZ广港电信隧道3
+      - 🇭🇰 香港|01|AZ广港电信隧道
+      - 🇨🇳 中继 台湾 01
+      - 🇨🇳 中继 台湾 02
+      - 🇨🇳 中继 台湾 03
+      - 隧道 柬埔寨01
+      - 🇯🇵 隧道 日本Ⅰ
+      - 🇯🇵 隧道 日本Ⅱ
+      - 🇯🇵 北方中继 日本A
+      - 🇯🇵 北方中继 日本B
+      - 🇯🇵 北方中继 日本C
+      - 🇯🇵 北方中继 日本D
+      - 🇯🇵 中继 日本 01
+      - 🇯🇵 中继 日本 02
+      - 🇸🇬 中继 新加坡 01
+      - 🇸🇬 中继 新加坡 02
+      - 🇸🇬 中继 新加坡 03
+      - 🇸🇬 中继 新加坡 04
+      - 🇸🇬 中继 新加坡 05
+      - 🇺🇲 中继 美国 01
+      - 🇺🇲 中继 美国 02
+      - 🇺🇲 中继 美国 03
+      - 🇺🇲 中继 美国 04
+      - 🇺🇲 中继 美国 05
+      - 🇭🇰 中继 香港 01
+      - 🇭🇰 中继 香港 02
+      - 🇭🇰 中继 香港 03
+      - 🇭🇰 中继 香港 04
+      - 🇭🇰 中继 香港 05
+      - 🇭🇰 中继 香港 06
+      - 🇭🇰 中继 香港 07
+      - 🇭🇰 中继 香港 08
+      - 🇭🇰 中继 香港 09
+      - 🇭🇰 中继 香港 10
+      - 🇭🇰 中继 香港 11
+      - 🇩🇪 隧道 德国Ⅰ
+      - 🇳🇱 隧道 荷兰Ⅰ
+      - 🇬🇧 隧道 英国Ⅰ
+      - 🇮🇳 隧道 印度Ⅰ
+      - 🇨🇭 隧道 瑞士Ⅰ
+      - 🇦🇺 隧道 澳大利亚Ⅰ
+      - 🇹🇷 隧道 土耳其Ⅰ
+      - 🇲🇾 中继 马来西亚 01
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 地址1:ysbzc.link 本节点限速10M
-      - 地址2:ysbzc.com 本节点限速20M
-      - 🇬🇧 隧道-英国-x0.5
-      - 🇭🇰 IEPL-香港HKT-x1.5
-      - 🇮🇳 隧道-印度-x0.5
-      - 🇨🇱 隧道-智利-x0.75
-      - 🇭🇰 IEPL-香港BGP-x2.0
-      - 🇭🇰 隧道-香港Scloud-x1.0
-      - 🇨🇳 隧道-台湾1-x1.0
-      - 🇨🇳 IEPL-台湾2-x2.0
-      - 🇻🇳 IEPL-越南河内-x2.0
-      - 🇯🇵 IEPL-日本02-大阪-ss-x2.0
-      - 🇯🇵 IEPL-日本02-大阪-v2-x2.0
-      - 🇯🇵 隧道-日本01-东京-v2-x1.0
-      - 🇯🇵 隧道-日本01-东京-ss-x1.0
-      - 🇰🇭 隧道-柬埔寨-x0.7
-      - 🇺🇸 IEPL-美国01-ss-x1.0
-      - 🇺🇸 IEPL-美国01-v2-x1.0
-      - 🇺🇸 IEPL-美国02-x1.0
-      - 🇺🇸 隧道-美国01-v2-x1.0
-      - 🇸🇬 IEPL-新加坡01-ss-x2.0
-      - 🇸🇬 隧道-新加坡01-v2-x1.0
-      - 🇸🇬 IEPL-新加坡02-v2-x2.0
-      - 🇮🇹 IEPL-意大利-x1.5
-      - 🇫🇷 IEPL-法国-x1.5
-      - 🇲🇾 IEPL-马来西亚-x1.5
-      - 🇷🇺 隧道-俄罗斯-ss-x0.5
-      - 🇷🇺 隧道-俄罗斯-v2-x0.5
-      - 🇵🇭 隧道-菲律宾-x1.0
-      - 🇩🇪 隧道-德国-x0.5
-      - 🇦🇺 隧道-澳大利亚-x0.7
-      - 🇹🇭 IEPL-泰国-x2.0
-      - 🇰🇷 IEPL-韩国02KT-x2.0
-      - 🇦🇷 隧道-阿根廷-x1.0
-      - 🇸🇦 隧道-沙特-x0.7
-      - 🇹🇷 IEPL-土耳其-x1.5
-      - 🇧🇷 隧道-巴西1-x1.0
+      - 🇹🇷 带【奈飞】字样的节点，完整解锁奈飞流媒体，支持奈飞非自制剧，建议自备奈飞全球区账号（非土耳其区等低价奈飞账号）
+      - 电报群https://t.me/feiniaoyunjichang
+      - 🇸🇬 新加坡|02直连2
+      - 🇸🇬 新加坡|03直连
+      - 🇸🇬 新加坡|01直连
+      - 🇸🇬 新加坡|02直连
+      - 🇸🇬 新加坡|04直连
+      - 🇸🇬 新加坡|05直连
+      - 🇭🇰 新加坡|03|奈飞海港电信隧道3
+      - 🇭🇰 新加坡|02|奈飞广港电信隧道
+      - 🇯🇵 新加坡|04|奈飞广日电信隧道2
+      - 🇯🇵 新加坡|03|广日电信隧道2
+      - 🇭🇰 新加坡|03|广港电信隧道4
+      - 🇯🇵 新加坡|01|广日电信隧道
+      - 🇭🇰 新加坡|01|广港电信隧道2
+      - 🇭🇰 新加坡|01|海港电信隧道3
+      - 🇭🇰 新加坡|01|广港电信隧道4
+      - 🇭🇰 俄罗斯|03广港电信隧道
+      - 🇭🇰 台湾|01奈飞广港电信隧道
+      - 🇯🇵 台湾|01奈飞广日电信隧道3
+      - 🇬🇧 英国|01|广港电信隧道
+      - 🇰🇷 韩国|01直连
+      - 🇰🇷 韩国|02直连
+      - 🇬🇧 英国|02|直连
+      - 🇯🇵 日本|02|直连2
+      - 🇯🇵 日本|01|直连
+      - 🇯🇵 日本|03|直连2
+      - 🇯🇵 日本|04|直连2
+      - 🇯🇵 日本|05|直连2
+      - 🇯🇵 日本|06|直连2
+      - 🇯🇵 日本|02|奈飞广日电信隧道2
+      - 🇯🇵 日本|04|广日电信隧道
+      - 🇯🇵 日本|01|广日电信隧道
+      - 🇯🇵 日本|01|湘日联通隧道
+      - 🇯🇵 日本|03|湘日联通隧道2
+      - 🇯🇵 日本|03|广日电信隧道2
+      - 🇯🇵 日本|02|奈飞湘日联通隧道
+      - 🇯🇵 日本|高速|01|广日电信隧道
+      - 🇯🇵 日本|高速|01|湘日联通隧道2
+      - 🇭🇰 美国|01|广港电信隧道0
+      - 🇭🇰 美国|09广港电信隧道
+      - 🇯🇵 美国|02|广日电信隧道
+      - 🇯🇵 美国|03广日电信隧道
+      - 🇭🇰 美国|04RN广港电信隧道
+      - 🇭🇰 香港|08奈飞AZ广港电信隧道(大带宽)
+      - 🇭🇰 香港|08奈飞广港电信隧道2(大带宽)
+      - 🇭🇰 香港|02奈飞广港电信隧道3
+      - 🇭🇰 香港|04直连
+      - 🇭🇰 香港|04|奈飞广港电信隧道4(大带宽)
+      - 🇭🇰 香港|04奈飞AZ广港电信隧道1(大带宽)
+      - 🇭🇰 香港|05AZ广港电信隧道1
+      - 🇭🇰 香港|02奈飞AZ广港电信隧道
+      - 🇭🇰 香港|05广港电信隧道3
+      - 🇭🇰 香港|07广日电信隧道
+      - 🇭🇰 香港|03直连
+      - 🇭🇰 香港|05直连
+      - 🇭🇰 香港|03|广港电信隧道
+      - 🇭🇰 香港|09AZ广港电信隧道
+      - 🇭🇰 香港|09AZ广港电信隧道1
+      - 🇭🇰 香港|08奈飞AZ广港电信隧道3
+      - 🇭🇰 香港|01|AZ广港电信隧道
+      - 🇨🇳 中继 台湾 01
+      - 🇨🇳 中继 台湾 02
+      - 🇨🇳 中继 台湾 03
+      - 隧道 柬埔寨01
+      - 🇯🇵 隧道 日本Ⅰ
+      - 🇯🇵 隧道 日本Ⅱ
+      - 🇯🇵 北方中继 日本A
+      - 🇯🇵 北方中继 日本B
+      - 🇯🇵 北方中继 日本C
+      - 🇯🇵 北方中继 日本D
+      - 🇯🇵 中继 日本 01
+      - 🇯🇵 中继 日本 02
+      - 🇸🇬 中继 新加坡 01
+      - 🇸🇬 中继 新加坡 02
+      - 🇸🇬 中继 新加坡 03
+      - 🇸🇬 中继 新加坡 04
+      - 🇸🇬 中继 新加坡 05
+      - 🇺🇲 中继 美国 01
+      - 🇺🇲 中继 美国 02
+      - 🇺🇲 中继 美国 03
+      - 🇺🇲 中继 美国 04
+      - 🇺🇲 中继 美国 05
+      - 🇭🇰 中继 香港 01
+      - 🇭🇰 中继 香港 02
+      - 🇭🇰 中继 香港 03
+      - 🇭🇰 中继 香港 04
+      - 🇭🇰 中继 香港 05
+      - 🇭🇰 中继 香港 06
+      - 🇭🇰 中继 香港 07
+      - 🇭🇰 中继 香港 08
+      - 🇭🇰 中继 香港 09
+      - 🇭🇰 中继 香港 10
+      - 🇭🇰 中继 香港 11
+      - 🇩🇪 隧道 德国Ⅰ
+      - 🇳🇱 隧道 荷兰Ⅰ
+      - 🇬🇧 隧道 英国Ⅰ
+      - 🇮🇳 隧道 印度Ⅰ
+      - 🇨🇭 隧道 瑞士Ⅰ
+      - 🇦🇺 隧道 澳大利亚Ⅰ
+      - 🇹🇷 隧道 土耳其Ⅰ
+      - 🇲🇾 中继 马来西亚 01
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 地址1:ysbzc.link 本节点限速10M
-      - 地址2:ysbzc.com 本节点限速20M
-      - 🇬🇧 隧道-英国-x0.5
-      - 🇭🇰 IEPL-香港HKT-x1.5
-      - 🇮🇳 隧道-印度-x0.5
-      - 🇨🇱 隧道-智利-x0.75
-      - 🇭🇰 IEPL-香港BGP-x2.0
-      - 🇭🇰 隧道-香港Scloud-x1.0
-      - 🇨🇳 隧道-台湾1-x1.0
-      - 🇨🇳 IEPL-台湾2-x2.0
-      - 🇻🇳 IEPL-越南河内-x2.0
-      - 🇯🇵 IEPL-日本02-大阪-ss-x2.0
-      - 🇯🇵 IEPL-日本02-大阪-v2-x2.0
-      - 🇯🇵 隧道-日本01-东京-v2-x1.0
-      - 🇯🇵 隧道-日本01-东京-ss-x1.0
-      - 🇰🇭 隧道-柬埔寨-x0.7
-      - 🇺🇸 IEPL-美国01-ss-x1.0
-      - 🇺🇸 IEPL-美国01-v2-x1.0
-      - 🇺🇸 IEPL-美国02-x1.0
-      - 🇺🇸 隧道-美国01-v2-x1.0
-      - 🇸🇬 IEPL-新加坡01-ss-x2.0
-      - 🇸🇬 隧道-新加坡01-v2-x1.0
-      - 🇸🇬 IEPL-新加坡02-v2-x2.0
-      - 🇮🇹 IEPL-意大利-x1.5
-      - 🇫🇷 IEPL-法国-x1.5
-      - 🇲🇾 IEPL-马来西亚-x1.5
-      - 🇷🇺 隧道-俄罗斯-ss-x0.5
-      - 🇷🇺 隧道-俄罗斯-v2-x0.5
-      - 🇵🇭 隧道-菲律宾-x1.0
-      - 🇩🇪 隧道-德国-x0.5
-      - 🇦🇺 隧道-澳大利亚-x0.7
-      - 🇹🇭 IEPL-泰国-x2.0
-      - 🇰🇷 IEPL-韩国02KT-x2.0
-      - 🇦🇷 隧道-阿根廷-x1.0
-      - 🇸🇦 隧道-沙特-x0.7
-      - 🇹🇷 IEPL-土耳其-x1.5
-      - 🇧🇷 隧道-巴西1-x1.0
+      - 🇹🇷 带【奈飞】字样的节点，完整解锁奈飞流媒体，支持奈飞非自制剧，建议自备奈飞全球区账号（非土耳其区等低价奈飞账号）
+      - 电报群https://t.me/feiniaoyunjichang
+      - 🇸🇬 新加坡|02直连2
+      - 🇸🇬 新加坡|03直连
+      - 🇸🇬 新加坡|01直连
+      - 🇸🇬 新加坡|02直连
+      - 🇸🇬 新加坡|04直连
+      - 🇸🇬 新加坡|05直连
+      - 🇭🇰 新加坡|03|奈飞海港电信隧道3
+      - 🇭🇰 新加坡|02|奈飞广港电信隧道
+      - 🇯🇵 新加坡|04|奈飞广日电信隧道2
+      - 🇯🇵 新加坡|03|广日电信隧道2
+      - 🇭🇰 新加坡|03|广港电信隧道4
+      - 🇯🇵 新加坡|01|广日电信隧道
+      - 🇭🇰 新加坡|01|广港电信隧道2
+      - 🇭🇰 新加坡|01|海港电信隧道3
+      - 🇭🇰 新加坡|01|广港电信隧道4
+      - 🇭🇰 俄罗斯|03广港电信隧道
+      - 🇭🇰 台湾|01奈飞广港电信隧道
+      - 🇯🇵 台湾|01奈飞广日电信隧道3
+      - 🇬🇧 英国|01|广港电信隧道
+      - 🇰🇷 韩国|01直连
+      - 🇰🇷 韩国|02直连
+      - 🇬🇧 英国|02|直连
+      - 🇯🇵 日本|02|直连2
+      - 🇯🇵 日本|01|直连
+      - 🇯🇵 日本|03|直连2
+      - 🇯🇵 日本|04|直连2
+      - 🇯🇵 日本|05|直连2
+      - 🇯🇵 日本|06|直连2
+      - 🇯🇵 日本|02|奈飞广日电信隧道2
+      - 🇯🇵 日本|04|广日电信隧道
+      - 🇯🇵 日本|01|广日电信隧道
+      - 🇯🇵 日本|01|湘日联通隧道
+      - 🇯🇵 日本|03|湘日联通隧道2
+      - 🇯🇵 日本|03|广日电信隧道2
+      - 🇯🇵 日本|02|奈飞湘日联通隧道
+      - 🇯🇵 日本|高速|01|广日电信隧道
+      - 🇯🇵 日本|高速|01|湘日联通隧道2
+      - 🇭🇰 美国|01|广港电信隧道0
+      - 🇭🇰 美国|09广港电信隧道
+      - 🇯🇵 美国|02|广日电信隧道
+      - 🇯🇵 美国|03广日电信隧道
+      - 🇭🇰 美国|04RN广港电信隧道
+      - 🇭🇰 香港|08奈飞AZ广港电信隧道(大带宽)
+      - 🇭🇰 香港|08奈飞广港电信隧道2(大带宽)
+      - 🇭🇰 香港|02奈飞广港电信隧道3
+      - 🇭🇰 香港|04直连
+      - 🇭🇰 香港|04|奈飞广港电信隧道4(大带宽)
+      - 🇭🇰 香港|04奈飞AZ广港电信隧道1(大带宽)
+      - 🇭🇰 香港|05AZ广港电信隧道1
+      - 🇭🇰 香港|02奈飞AZ广港电信隧道
+      - 🇭🇰 香港|05广港电信隧道3
+      - 🇭🇰 香港|07广日电信隧道
+      - 🇭🇰 香港|03直连
+      - 🇭🇰 香港|05直连
+      - 🇭🇰 香港|03|广港电信隧道
+      - 🇭🇰 香港|09AZ广港电信隧道
+      - 🇭🇰 香港|09AZ广港电信隧道1
+      - 🇭🇰 香港|08奈飞AZ广港电信隧道3
+      - 🇭🇰 香港|01|AZ广港电信隧道
+      - 🇨🇳 中继 台湾 01
+      - 🇨🇳 中继 台湾 02
+      - 🇨🇳 中继 台湾 03
+      - 隧道 柬埔寨01
+      - 🇯🇵 隧道 日本Ⅰ
+      - 🇯🇵 隧道 日本Ⅱ
+      - 🇯🇵 北方中继 日本A
+      - 🇯🇵 北方中继 日本B
+      - 🇯🇵 北方中继 日本C
+      - 🇯🇵 北方中继 日本D
+      - 🇯🇵 中继 日本 01
+      - 🇯🇵 中继 日本 02
+      - 🇸🇬 中继 新加坡 01
+      - 🇸🇬 中继 新加坡 02
+      - 🇸🇬 中继 新加坡 03
+      - 🇸🇬 中继 新加坡 04
+      - 🇸🇬 中继 新加坡 05
+      - 🇺🇲 中继 美国 01
+      - 🇺🇲 中继 美国 02
+      - 🇺🇲 中继 美国 03
+      - 🇺🇲 中继 美国 04
+      - 🇺🇲 中继 美国 05
+      - 🇭🇰 中继 香港 01
+      - 🇭🇰 中继 香港 02
+      - 🇭🇰 中继 香港 03
+      - 🇭🇰 中继 香港 04
+      - 🇭🇰 中继 香港 05
+      - 🇭🇰 中继 香港 06
+      - 🇭🇰 中继 香港 07
+      - 🇭🇰 中继 香港 08
+      - 🇭🇰 中继 香港 09
+      - 🇭🇰 中继 香港 10
+      - 🇭🇰 中继 香港 11
+      - 🇩🇪 隧道 德国Ⅰ
+      - 🇳🇱 隧道 荷兰Ⅰ
+      - 🇬🇧 隧道 英国Ⅰ
+      - 🇮🇳 隧道 印度Ⅰ
+      - 🇨🇭 隧道 瑞士Ⅰ
+      - 🇦🇺 隧道 澳大利亚Ⅰ
+      - 🇹🇷 隧道 土耳其Ⅰ
+      - 🇲🇾 中继 马来西亚 01
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 地址1:ysbzc.link 本节点限速10M
-      - 地址2:ysbzc.com 本节点限速20M
-      - 🇬🇧 隧道-英国-x0.5
-      - 🇭🇰 IEPL-香港HKT-x1.5
-      - 🇮🇳 隧道-印度-x0.5
-      - 🇨🇱 隧道-智利-x0.75
-      - 🇭🇰 IEPL-香港BGP-x2.0
-      - 🇭🇰 隧道-香港Scloud-x1.0
-      - 🇨🇳 隧道-台湾1-x1.0
-      - 🇨🇳 IEPL-台湾2-x2.0
-      - 🇻🇳 IEPL-越南河内-x2.0
-      - 🇯🇵 IEPL-日本02-大阪-ss-x2.0
-      - 🇯🇵 IEPL-日本02-大阪-v2-x2.0
-      - 🇯🇵 隧道-日本01-东京-v2-x1.0
-      - 🇯🇵 隧道-日本01-东京-ss-x1.0
-      - 🇰🇭 隧道-柬埔寨-x0.7
-      - 🇺🇸 IEPL-美国01-ss-x1.0
-      - 🇺🇸 IEPL-美国01-v2-x1.0
-      - 🇺🇸 IEPL-美国02-x1.0
-      - 🇺🇸 隧道-美国01-v2-x1.0
-      - 🇸🇬 IEPL-新加坡01-ss-x2.0
-      - 🇸🇬 隧道-新加坡01-v2-x1.0
-      - 🇸🇬 IEPL-新加坡02-v2-x2.0
-      - 🇮🇹 IEPL-意大利-x1.5
-      - 🇫🇷 IEPL-法国-x1.5
-      - 🇲🇾 IEPL-马来西亚-x1.5
-      - 🇷🇺 隧道-俄罗斯-ss-x0.5
-      - 🇷🇺 隧道-俄罗斯-v2-x0.5
-      - 🇵🇭 隧道-菲律宾-x1.0
-      - 🇩🇪 隧道-德国-x0.5
-      - 🇦🇺 隧道-澳大利亚-x0.7
-      - 🇹🇭 IEPL-泰国-x2.0
-      - 🇰🇷 IEPL-韩国02KT-x2.0
-      - 🇦🇷 隧道-阿根廷-x1.0
-      - 🇸🇦 隧道-沙特-x0.7
-      - 🇹🇷 IEPL-土耳其-x1.5
-      - 🇧🇷 隧道-巴西1-x1.0
+      - 🇹🇷 带【奈飞】字样的节点，完整解锁奈飞流媒体，支持奈飞非自制剧，建议自备奈飞全球区账号（非土耳其区等低价奈飞账号）
+      - 电报群https://t.me/feiniaoyunjichang
+      - 🇸🇬 新加坡|02直连2
+      - 🇸🇬 新加坡|03直连
+      - 🇸🇬 新加坡|01直连
+      - 🇸🇬 新加坡|02直连
+      - 🇸🇬 新加坡|04直连
+      - 🇸🇬 新加坡|05直连
+      - 🇭🇰 新加坡|03|奈飞海港电信隧道3
+      - 🇭🇰 新加坡|02|奈飞广港电信隧道
+      - 🇯🇵 新加坡|04|奈飞广日电信隧道2
+      - 🇯🇵 新加坡|03|广日电信隧道2
+      - 🇭🇰 新加坡|03|广港电信隧道4
+      - 🇯🇵 新加坡|01|广日电信隧道
+      - 🇭🇰 新加坡|01|广港电信隧道2
+      - 🇭🇰 新加坡|01|海港电信隧道3
+      - 🇭🇰 新加坡|01|广港电信隧道4
+      - 🇭🇰 俄罗斯|03广港电信隧道
+      - 🇭🇰 台湾|01奈飞广港电信隧道
+      - 🇯🇵 台湾|01奈飞广日电信隧道3
+      - 🇬🇧 英国|01|广港电信隧道
+      - 🇰🇷 韩国|01直连
+      - 🇰🇷 韩国|02直连
+      - 🇬🇧 英国|02|直连
+      - 🇯🇵 日本|02|直连2
+      - 🇯🇵 日本|01|直连
+      - 🇯🇵 日本|03|直连2
+      - 🇯🇵 日本|04|直连2
+      - 🇯🇵 日本|05|直连2
+      - 🇯🇵 日本|06|直连2
+      - 🇯🇵 日本|02|奈飞广日电信隧道2
+      - 🇯🇵 日本|04|广日电信隧道
+      - 🇯🇵 日本|01|广日电信隧道
+      - 🇯🇵 日本|01|湘日联通隧道
+      - 🇯🇵 日本|03|湘日联通隧道2
+      - 🇯🇵 日本|03|广日电信隧道2
+      - 🇯🇵 日本|02|奈飞湘日联通隧道
+      - 🇯🇵 日本|高速|01|广日电信隧道
+      - 🇯🇵 日本|高速|01|湘日联通隧道2
+      - 🇭🇰 美国|01|广港电信隧道0
+      - 🇭🇰 美国|09广港电信隧道
+      - 🇯🇵 美国|02|广日电信隧道
+      - 🇯🇵 美国|03广日电信隧道
+      - 🇭🇰 美国|04RN广港电信隧道
+      - 🇭🇰 香港|08奈飞AZ广港电信隧道(大带宽)
+      - 🇭🇰 香港|08奈飞广港电信隧道2(大带宽)
+      - 🇭🇰 香港|02奈飞广港电信隧道3
+      - 🇭🇰 香港|04直连
+      - 🇭🇰 香港|04|奈飞广港电信隧道4(大带宽)
+      - 🇭🇰 香港|04奈飞AZ广港电信隧道1(大带宽)
+      - 🇭🇰 香港|05AZ广港电信隧道1
+      - 🇭🇰 香港|02奈飞AZ广港电信隧道
+      - 🇭🇰 香港|05广港电信隧道3
+      - 🇭🇰 香港|07广日电信隧道
+      - 🇭🇰 香港|03直连
+      - 🇭🇰 香港|05直连
+      - 🇭🇰 香港|03|广港电信隧道
+      - 🇭🇰 香港|09AZ广港电信隧道
+      - 🇭🇰 香港|09AZ广港电信隧道1
+      - 🇭🇰 香港|08奈飞AZ广港电信隧道3
+      - 🇭🇰 香港|01|AZ广港电信隧道
+      - 🇨🇳 中继 台湾 01
+      - 🇨🇳 中继 台湾 02
+      - 🇨🇳 中继 台湾 03
+      - 隧道 柬埔寨01
+      - 🇯🇵 隧道 日本Ⅰ
+      - 🇯🇵 隧道 日本Ⅱ
+      - 🇯🇵 北方中继 日本A
+      - 🇯🇵 北方中继 日本B
+      - 🇯🇵 北方中继 日本C
+      - 🇯🇵 北方中继 日本D
+      - 🇯🇵 中继 日本 01
+      - 🇯🇵 中继 日本 02
+      - 🇸🇬 中继 新加坡 01
+      - 🇸🇬 中继 新加坡 02
+      - 🇸🇬 中继 新加坡 03
+      - 🇸🇬 中继 新加坡 04
+      - 🇸🇬 中继 新加坡 05
+      - 🇺🇲 中继 美国 01
+      - 🇺🇲 中继 美国 02
+      - 🇺🇲 中继 美国 03
+      - 🇺🇲 中继 美国 04
+      - 🇺🇲 中继 美国 05
+      - 🇭🇰 中继 香港 01
+      - 🇭🇰 中继 香港 02
+      - 🇭🇰 中继 香港 03
+      - 🇭🇰 中继 香港 04
+      - 🇭🇰 中继 香港 05
+      - 🇭🇰 中继 香港 06
+      - 🇭🇰 中继 香港 07
+      - 🇭🇰 中继 香港 08
+      - 🇭🇰 中继 香港 09
+      - 🇭🇰 中继 香港 10
+      - 🇭🇰 中继 香港 11
+      - 🇩🇪 隧道 德国Ⅰ
+      - 🇳🇱 隧道 荷兰Ⅰ
+      - 🇬🇧 隧道 英国Ⅰ
+      - 🇮🇳 隧道 印度Ⅰ
+      - 🇨🇭 隧道 瑞士Ⅰ
+      - 🇦🇺 隧道 澳大利亚Ⅰ
+      - 🇹🇷 隧道 土耳其Ⅰ
+      - 🇲🇾 中继 马来西亚 01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -362,43 +882,108 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 地址1:ysbzc.link 本节点限速10M
-      - 地址2:ysbzc.com 本节点限速20M
-      - 🇬🇧 隧道-英国-x0.5
-      - 🇭🇰 IEPL-香港HKT-x1.5
-      - 🇮🇳 隧道-印度-x0.5
-      - 🇨🇱 隧道-智利-x0.75
-      - 🇭🇰 IEPL-香港BGP-x2.0
-      - 🇭🇰 隧道-香港Scloud-x1.0
-      - 🇨🇳 隧道-台湾1-x1.0
-      - 🇨🇳 IEPL-台湾2-x2.0
-      - 🇻🇳 IEPL-越南河内-x2.0
-      - 🇯🇵 IEPL-日本02-大阪-ss-x2.0
-      - 🇯🇵 IEPL-日本02-大阪-v2-x2.0
-      - 🇯🇵 隧道-日本01-东京-v2-x1.0
-      - 🇯🇵 隧道-日本01-东京-ss-x1.0
-      - 🇰🇭 隧道-柬埔寨-x0.7
-      - 🇺🇸 IEPL-美国01-ss-x1.0
-      - 🇺🇸 IEPL-美国01-v2-x1.0
-      - 🇺🇸 IEPL-美国02-x1.0
-      - 🇺🇸 隧道-美国01-v2-x1.0
-      - 🇸🇬 IEPL-新加坡01-ss-x2.0
-      - 🇸🇬 隧道-新加坡01-v2-x1.0
-      - 🇸🇬 IEPL-新加坡02-v2-x2.0
-      - 🇮🇹 IEPL-意大利-x1.5
-      - 🇫🇷 IEPL-法国-x1.5
-      - 🇲🇾 IEPL-马来西亚-x1.5
-      - 🇷🇺 隧道-俄罗斯-ss-x0.5
-      - 🇷🇺 隧道-俄罗斯-v2-x0.5
-      - 🇵🇭 隧道-菲律宾-x1.0
-      - 🇩🇪 隧道-德国-x0.5
-      - 🇦🇺 隧道-澳大利亚-x0.7
-      - 🇹🇭 IEPL-泰国-x2.0
-      - 🇰🇷 IEPL-韩国02KT-x2.0
-      - 🇦🇷 隧道-阿根廷-x1.0
-      - 🇸🇦 隧道-沙特-x0.7
-      - 🇹🇷 IEPL-土耳其-x1.5
-      - 🇧🇷 隧道-巴西1-x1.0
+      - 🇹🇷 带【奈飞】字样的节点，完整解锁奈飞流媒体，支持奈飞非自制剧，建议自备奈飞全球区账号（非土耳其区等低价奈飞账号）
+      - 电报群https://t.me/feiniaoyunjichang
+      - 🇸🇬 新加坡|02直连2
+      - 🇸🇬 新加坡|03直连
+      - 🇸🇬 新加坡|01直连
+      - 🇸🇬 新加坡|02直连
+      - 🇸🇬 新加坡|04直连
+      - 🇸🇬 新加坡|05直连
+      - 🇭🇰 新加坡|03|奈飞海港电信隧道3
+      - 🇭🇰 新加坡|02|奈飞广港电信隧道
+      - 🇯🇵 新加坡|04|奈飞广日电信隧道2
+      - 🇯🇵 新加坡|03|广日电信隧道2
+      - 🇭🇰 新加坡|03|广港电信隧道4
+      - 🇯🇵 新加坡|01|广日电信隧道
+      - 🇭🇰 新加坡|01|广港电信隧道2
+      - 🇭🇰 新加坡|01|海港电信隧道3
+      - 🇭🇰 新加坡|01|广港电信隧道4
+      - 🇭🇰 俄罗斯|03广港电信隧道
+      - 🇭🇰 台湾|01奈飞广港电信隧道
+      - 🇯🇵 台湾|01奈飞广日电信隧道3
+      - 🇬🇧 英国|01|广港电信隧道
+      - 🇰🇷 韩国|01直连
+      - 🇰🇷 韩国|02直连
+      - 🇬🇧 英国|02|直连
+      - 🇯🇵 日本|02|直连2
+      - 🇯🇵 日本|01|直连
+      - 🇯🇵 日本|03|直连2
+      - 🇯🇵 日本|04|直连2
+      - 🇯🇵 日本|05|直连2
+      - 🇯🇵 日本|06|直连2
+      - 🇯🇵 日本|02|奈飞广日电信隧道2
+      - 🇯🇵 日本|04|广日电信隧道
+      - 🇯🇵 日本|01|广日电信隧道
+      - 🇯🇵 日本|01|湘日联通隧道
+      - 🇯🇵 日本|03|湘日联通隧道2
+      - 🇯🇵 日本|03|广日电信隧道2
+      - 🇯🇵 日本|02|奈飞湘日联通隧道
+      - 🇯🇵 日本|高速|01|广日电信隧道
+      - 🇯🇵 日本|高速|01|湘日联通隧道2
+      - 🇭🇰 美国|01|广港电信隧道0
+      - 🇭🇰 美国|09广港电信隧道
+      - 🇯🇵 美国|02|广日电信隧道
+      - 🇯🇵 美国|03广日电信隧道
+      - 🇭🇰 美国|04RN广港电信隧道
+      - 🇭🇰 香港|08奈飞AZ广港电信隧道(大带宽)
+      - 🇭🇰 香港|08奈飞广港电信隧道2(大带宽)
+      - 🇭🇰 香港|02奈飞广港电信隧道3
+      - 🇭🇰 香港|04直连
+      - 🇭🇰 香港|04|奈飞广港电信隧道4(大带宽)
+      - 🇭🇰 香港|04奈飞AZ广港电信隧道1(大带宽)
+      - 🇭🇰 香港|05AZ广港电信隧道1
+      - 🇭🇰 香港|02奈飞AZ广港电信隧道
+      - 🇭🇰 香港|05广港电信隧道3
+      - 🇭🇰 香港|07广日电信隧道
+      - 🇭🇰 香港|03直连
+      - 🇭🇰 香港|05直连
+      - 🇭🇰 香港|03|广港电信隧道
+      - 🇭🇰 香港|09AZ广港电信隧道
+      - 🇭🇰 香港|09AZ广港电信隧道1
+      - 🇭🇰 香港|08奈飞AZ广港电信隧道3
+      - 🇭🇰 香港|01|AZ广港电信隧道
+      - 🇨🇳 中继 台湾 01
+      - 🇨🇳 中继 台湾 02
+      - 🇨🇳 中继 台湾 03
+      - 隧道 柬埔寨01
+      - 🇯🇵 隧道 日本Ⅰ
+      - 🇯🇵 隧道 日本Ⅱ
+      - 🇯🇵 北方中继 日本A
+      - 🇯🇵 北方中继 日本B
+      - 🇯🇵 北方中继 日本C
+      - 🇯🇵 北方中继 日本D
+      - 🇯🇵 中继 日本 01
+      - 🇯🇵 中继 日本 02
+      - 🇸🇬 中继 新加坡 01
+      - 🇸🇬 中继 新加坡 02
+      - 🇸🇬 中继 新加坡 03
+      - 🇸🇬 中继 新加坡 04
+      - 🇸🇬 中继 新加坡 05
+      - 🇺🇲 中继 美国 01
+      - 🇺🇲 中继 美国 02
+      - 🇺🇲 中继 美国 03
+      - 🇺🇲 中继 美国 04
+      - 🇺🇲 中继 美国 05
+      - 🇭🇰 中继 香港 01
+      - 🇭🇰 中继 香港 02
+      - 🇭🇰 中继 香港 03
+      - 🇭🇰 中继 香港 04
+      - 🇭🇰 中继 香港 05
+      - 🇭🇰 中继 香港 06
+      - 🇭🇰 中继 香港 07
+      - 🇭🇰 中继 香港 08
+      - 🇭🇰 中继 香港 09
+      - 🇭🇰 中继 香港 10
+      - 🇭🇰 中继 香港 11
+      - 🇩🇪 隧道 德国Ⅰ
+      - 🇳🇱 隧道 荷兰Ⅰ
+      - 🇬🇧 隧道 英国Ⅰ
+      - 🇮🇳 隧道 印度Ⅰ
+      - 🇨🇭 隧道 瑞士Ⅰ
+      - 🇦🇺 隧道 澳大利亚Ⅰ
+      - 🇹🇷 隧道 土耳其Ⅰ
+      - 🇲🇾 中继 马来西亚 01
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -2138,7 +2723,6 @@ rules:
  - DOMAIN-SUFFIX,safebrowsing.googleapis.com,🎯 全球直连
  - DOMAIN-SUFFIX,settings.crashlytics.com,🎯 全球直连
  - DOMAIN-SUFFIX,ssl-google-analytics.l.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,ssl.gstatic.com,🎯 全球直连
  - DOMAIN-SUFFIX,toolbarqueries.google.com,🎯 全球直连
  - DOMAIN-SUFFIX,tools.google.com,🎯 全球直连
  - DOMAIN-SUFFIX,tools.l.google.com,🎯 全球直连
@@ -2279,10 +2863,13 @@ rules:
  - DOMAIN-SUFFIX,edgedatg.com,🌍 国外媒体
  - DOMAIN-SUFFIX,go.com,🌍 国外媒体
  - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
+ - DOMAIN,api-abematv.bucketeer.jp,🌍 国外媒体
+ - DOMAIN-SUFFIX,abema-tv.com,🌍 国外媒体
  - DOMAIN-SUFFIX,abema.io,🌍 国外媒体
  - DOMAIN-SUFFIX,abema.tv,🌍 国外媒体
  - DOMAIN-SUFFIX,ameba.jp,🌍 国外媒体
  - DOMAIN-SUFFIX,hayabusa.io,🌍 国外媒体
+ - DOMAIN-SUFFIX,hayabusa.media,🌍 国外媒体
  - DOMAIN-SUFFIX,c4assets.com,🌍 国外媒体
  - DOMAIN-SUFFIX,channel4.com,🌍 国外媒体
  - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
@@ -2564,7 +3151,7 @@ rules:
  - DOMAIN-SUFFIX,adguard.org,🚀 节点选择
  - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
  - DOMAIN-SUFFIX,btlibrary.me,🚀 节点选择
- - DOMAIN-SUFFIX,cccat.io,🚀 节点选择
+ - DOMAIN-SUFFIX,chat.openai.com,🚀 节点选择
  - DOMAIN-SUFFIX,cloudcone.com,🚀 节点选择
  - DOMAIN-SUFFIX,dubox.com,🚀 节点选择
  - DOMAIN-SUFFIX,gameloft.com,🚀 节点选择
@@ -2575,6 +3162,7 @@ rules:
  - DOMAIN-SUFFIX,linkedin.com,🚀 节点选择
  - DOMAIN-SUFFIX,myteamspeak.com,🚀 节点选择
  - DOMAIN-SUFFIX,notion.so,🚀 节点选择
+ - DOMAIN-SUFFIX,openai.com,🚀 节点选择
  - DOMAIN-SUFFIX,ping.pe,🚀 节点选择
  - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
  - DOMAIN-SUFFIX,teddysun.com,🚀 节点选择
@@ -3143,6 +3731,7 @@ rules:
  - DOMAIN-SUFFIX,douyuscdn.com,🎯 全球直连
  - DOMAIN-SUFFIX,douyutv.com,🎯 全球直连
  - DOMAIN-SUFFIX,epicgames.com,🎯 全球直连
+ - DOMAIN-SUFFIX,epicgames.dev,🎯 全球直连
  - DOMAIN-SUFFIX,helpshift.com,🎯 全球直连
  - DOMAIN-SUFFIX,paragon.com,🎯 全球直连
  - DOMAIN-SUFFIX,unrealengine.com,🎯 全球直连
@@ -3401,8 +3990,6 @@ rules:
  - DOMAIN-SUFFIX,clouddn.com,🎯 全球直连
  - DOMAIN-SUFFIX,cloudxns.net,🎯 全球直连
  - DOMAIN-SUFFIX,cn163.net,🎯 全球直连
- - DOMAIN-SUFFIX,cnbeta.com,🎯 全球直连
- - DOMAIN-SUFFIX,cnbetacdn.com,🎯 全球直连
  - DOMAIN-SUFFIX,cnblogs.com,🎯 全球直连
  - DOMAIN-SUFFIX,cnki.net,🎯 全球直连
  - DOMAIN-SUFFIX,cnmstl.net,🎯 全球直连
