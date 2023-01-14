@@ -99,8 +99,6 @@ proxies:
   - {name: 香港|02奈飞AZ广港电信隧道, server: gzdx0.170203.xyz, port: 40389, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax02.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 香港|05广港电信隧道3, server: gzdx1.170203.xyz, port: 34529, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax05.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 香港|07广日电信隧道, server: gzdx0.170203.xyz, port: 47893, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax07.170203.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港|03直连, server: hkmax03.170203.xyz, port: 46534, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax03.170203.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港|05直连, server: hkmax05.170203.xyz, port: 45435, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax05.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 香港|03|广港电信隧道, server: gzdx0.170203.xyz, port: 25199, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax03.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 香港|01AZ海港电信隧道, server: gzdx1.170203.xyz, port: 11400, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax01.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 香港|09AZ广港电信隧道, server: gzdx1.170203.xyz, port: 19012, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax09.170203.xyz, skip-cert-verify: true, udp: true}
@@ -216,8 +214,6 @@ proxy-groups:
       - 香港|02奈飞AZ广港电信隧道
       - 香港|05广港电信隧道3
       - 香港|07广日电信隧道
-      - 香港|03直连
-      - 香港|05直连
       - 香港|03|广港电信隧道
       - 香港|01AZ海港电信隧道
       - 香港|09AZ广港电信隧道
@@ -323,8 +319,6 @@ proxy-groups:
       - 香港|02奈飞AZ广港电信隧道
       - 香港|05广港电信隧道3
       - 香港|07广日电信隧道
-      - 香港|03直连
-      - 香港|05直连
       - 香港|03|广港电信隧道
       - 香港|01AZ海港电信隧道
       - 香港|09AZ广港电信隧道
@@ -539,8 +533,6 @@ proxy-groups:
       - 香港|02奈飞AZ广港电信隧道
       - 香港|05广港电信隧道3
       - 香港|07广日电信隧道
-      - 香港|03直连
-      - 香港|05直连
       - 香港|03|广港电信隧道
       - 香港|01AZ海港电信隧道
       - 香港|09AZ广港电信隧道
