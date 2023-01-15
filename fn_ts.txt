@@ -5,6 +5,74 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 距离下次重置剩余：28 天, server: 219.78.227.27, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-hk.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 香港HKT 防失联, server: 219.78.227.27, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-hk.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 香港 01, server: dl-hk1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-hk.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 香港 02, server: dl-hk2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-hk.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 香港 03, server: dl-hk3.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-hk.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 香港 04, server: dl-hk4.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-hk.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 香港 05, server: dl-hk5.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-hk.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 香港 06, server: dl-hk6.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-hk.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 台湾 01, server: dl-tw1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-tw.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 台湾 02, server: dl-tw2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-tw.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 台湾 03, server: dl-tw3.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-tw.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 台湾 04, server: dl-tw4.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-tw.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 日本 01, server: dl-jp1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-jp.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 日本 02, server: dl-jp2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-jp.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 日本 03, server: dl-jp3.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-jp.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 日本 04, server: dl-jp4.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-jp.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 日本 05, server: dl-jp5.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-jp.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 韩国 首尔, server: dl-kr1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-ockrsl.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 韩国 春川, server: dl-kr2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-ockrcc.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 01, server: dl-sg1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-sg.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 02, server: dl-sg2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-sg.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 03, server: dl-sg3.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-sg.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 04, server: dl-sg4.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-sg.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 05, server: dl-sg5.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-sg.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 01, server: dl-us1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-us.xn--vur082k.cc, skip-cert-verify: true, udp: true}
+  - {name: 美国 02, server: dl-us2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-us.xn--vur082k.cc, skip-cert-verify: true, udp: true}
+  - {name: 美国 03, server: dl-us3.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-us.xn--vur082k.cc, skip-cert-verify: true, udp: true}
+  - {name: 美国 04, server: dl-us4.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-us.xn--vur082k.cc, skip-cert-verify: true, udp: true}
+  - {name: 印度 孟买, server: dl-eu1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-in.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 印度 海得拉巴, server: dl-eu2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-in2.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 澳大利亚 悉尼, server: dl-eu1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-au.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 澳大利亚 墨尔本, server: dl-eu2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-au2.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 阿联酋 迪拜, server: dl-eu1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-ae.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 阿联酋 阿布扎比, server: dl-eu2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-ae2.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 沙特 01, server: dl-eu1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-sa.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 沙特 02, server: dl-eu2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-sa.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 以色列 01, server: dl-eu1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-il.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 以色列 02, server: dl-eu2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-il.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 南非 01, server: dl-eu1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-za.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 南非 02, server: dl-eu2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-za.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 德国 01, server: dl-eu1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-de.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 德国 02, server: dl-eu2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-de.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 法国 01, server: dl-eu1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-fr.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 法国 02, server: dl-eu2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-fr.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 英国 伦敦, server: dl-eu1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-uk.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 英国 加的夫, server: dl-eu2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-uk2.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 意大利 01, server: dl-eu1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-it.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 意大利 02, server: dl-eu2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-it.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 西班牙 01, server: dl-eu1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-es.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 西班牙 02, server: dl-eu2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-es.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 瑞士 01, server: dl-eu1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-ch.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 瑞士 02, server: dl-eu2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-ch.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 荷兰 01, server: dl-eu1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-nl.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 荷兰 02, server: dl-eu2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-nl.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 瑞典 01, server: dl-eu1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-se.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 瑞典 02, server: dl-eu2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-se.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 土耳其 01, server: dl-eu1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-tr.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 土耳其 02, server: dl-eu2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-tr.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 01, server: core1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-ru.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 02, server: core2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-ru.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 加拿大 多伦多, server: dl-am1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-ca.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 加拿大 蒙特利尔, server: dl-am2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-ca2.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 巴西 圣保罗, server: dl-am1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-br.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 巴西 维涅杜, server: dl-am2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-br2.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 智利 01, server: dl-am1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-cl.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 智利 02, server: dl-am2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-cl.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 阿根廷 01, server: dl-am1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-ar.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 阿根廷 02, server: dl-am2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-ar.efyunpan.com, skip-cert-verify: true, udp: true}
   - {name: 中继 台湾 01, server: ttttasbhdjasbndwwww.woha11.cn, port: 9636, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ttttasbhdjasbndwwww.woha11.cn}}, udp: true}
   - {name: 中继 台湾 02, server: ttttasbhdjasbndwwww.woha11.cn, port: 9637, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ttttasbhdjasbndwwww.woha11.cn}}, udp: true}
   - {name: 中继 台湾 03, server: ttttasbhdjasbndwwww.woha11.cn, port: 9638, type: vmess, uuid: 5265fc2a-ea47-46a8-8377-42e3ef1ad5d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ttttasbhdjasbndwwww.woha11.cn}}, udp: true}
@@ -55,9 +123,10 @@ proxies:
   - {name: 新加坡|04直连, server: sg04.170203.xyz, port: 43543, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg04.170203.xyz}}, udp: true}
   - {name: 新加坡|05直连, server: sg05.170203.xyz, port: 43543, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg05.170203.xyz}}, udp: true}
   - {name: 新加坡|03|奈飞海港电信隧道3, server: gzdx0.170203.xyz, port: 26143, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: 0a01f3ad01.170203.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡|02|奈飞广日电信隧道2, server: gzdx0.170203.xyz, port: 22856, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: sgmax02.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡|02|奈飞广日电信隧道2, server: gzdx1.170203.xyz, port: 52791, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: sgmax02.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 新加坡|02|奈飞广港电信隧道, server: gzdx0.170203.xyz, port: 26285, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: sgmax02.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 新加坡|04|奈飞广日电信隧道2, server: gzdx0.170203.xyz, port: 11655, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: sgmax04.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡|04|奈飞广港电信隧道, server: gzdx1.170203.xyz, port: 14909, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: sgmax04.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 新加坡|03|广日电信隧道2, server: gzdx0.170203.xyz, port: 42862, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: sgmax03.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 新加坡|03|广港电信隧道4, server: gzdx0.170203.xyz, port: 48567, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: sgmax03.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 新加坡|01|广日电信隧道, server: gzdx1.170203.xyz, port: 10593, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: sgmax01.170203.xyz, skip-cert-verify: true, udp: true}
@@ -70,7 +139,10 @@ proxies:
   - {name: 英国|01|广港电信隧道, server: gzdx0.170203.xyz, port: 60469, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: uk01.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 韩国|01直连, server: kr01.170203.xyz, port: 45453, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kr01.170203.xyz}}, udp: true}
   - {name: 韩国|02直连, server: kr002.170203.xyz, port: 23245, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kr002.170203.xyz}}, udp: true}
+  - {name: 印度|01|直连, server: in01.170203.xyz, port: 23245, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: in01.170203.xyz}}, udp: true}
   - {name: 英国|02|直连, server: uk02.170203.xyz, port: 23245, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: uk02.170203.xyz}}, udp: true}
+  - {name: 澳洲|01|直连, server: au01.170203.xyz, port: 23245, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: au01.170203.xyz}}, udp: true}
+  - {name: 韩国|03直连, server: kr03.170203.xyz, port: 23245, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kr03.170203.xyz}}, udp: true}
   - {name: 日本|02|直连2, server: jp02.170203.xyz, port: 23245, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp02.170203.xyz}}, udp: true}
   - {name: 日本|01|直连, server: jp001.170203.xyz, port: 23245, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp001.170203.xyz}}, udp: true}
   - {name: 日本|03|直连2, server: jp03.170203.xyz, port: 23245, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp03.170203.xyz}}, udp: true}
@@ -85,24 +157,22 @@ proxies:
   - {name: 日本|02|奈飞湘日联通隧道, server: gzdx1.170203.xyz, port: 28977, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: jpmax02.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 日本|高速|01|广日电信隧道, server: gzdx0.170203.xyz, port: 64750, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: jpmax01.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 日本|高速|01|湘日联通隧道2, server: gzdx1.170203.xyz, port: 21116, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: jpmax01.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国|01|直连, server: us01.170203.xyz, port: 43543, type: vmess, uuid: 1ebd8d93-725c-407a-bdd7-81cbed414eac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us01.170203.xyz}}, udp: true}
   - {name: 美国|01|广港电信隧道0, server: gzdx1.170203.xyz, port: 57526, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: usmax01.170203.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国|09广港电信隧道, server: gzdx1.170203.xyz, port: 14101, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: us09.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 美国|02|广日电信隧道, server: gzdx0.170203.xyz, port: 61473, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: usmax02.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 美国|03广日电信隧道, server: gzdx0.170203.xyz, port: 41607, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: us03.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 美国|04RN广港电信隧道, server: gzdx0.170203.xyz, port: 10030, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: usmax040.170203.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港|08奈飞AZ广港电信隧道(大带宽), server: gzdx0.170203.xyz, port: 42473, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax08.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|08奈飞广港电信隧道(大带宽), server: gzdx0.170203.xyz, port: 42473, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax08.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 香港|08奈飞广港电信隧道2(大带宽), server: gzdx1.170203.xyz, port: 54777, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax08.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 香港|02奈飞广港电信隧道3, server: gzdx0.170203.xyz, port: 37400, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax02.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|02奈飞广港电信隧道2, server: gzdx0.170203.xyz, port: 40389, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax02.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 香港|04|奈飞广港电信隧道4(大带宽), server: gzdx0.170203.xyz, port: 14675, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax04.170203.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港|04奈飞AZ广港电信隧道1(大带宽), server: gzdx1.170203.xyz, port: 57743, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax04.170203.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港|05AZ广港电信隧道1, server: gzdx0.170203.xyz, port: 50123, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax05.170203.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港|02奈飞AZ广港电信隧道, server: gzdx0.170203.xyz, port: 40389, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax02.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|04奈飞广港电信隧道1(大带宽), server: gzdx1.170203.xyz, port: 57743, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax04.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|05广港电信隧道1, server: gzdx0.170203.xyz, port: 50123, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax05.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港|02奈飞广港电信隧道, server: gzdx1.170203.xyz, port: 24352, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax02.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 香港|05广港电信隧道3, server: gzdx1.170203.xyz, port: 34529, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax05.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 香港|07广日电信隧道, server: gzdx0.170203.xyz, port: 47893, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax07.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 香港|03|广港电信隧道, server: gzdx0.170203.xyz, port: 25199, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax03.170203.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港|01AZ海港电信隧道, server: gzdx1.170203.xyz, port: 11400, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax01.170203.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港|09AZ广港电信隧道, server: gzdx1.170203.xyz, port: 19012, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax09.170203.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港|09AZ广港电信隧道1, server: gzdx0.170203.xyz, port: 33040, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax09.170203.xyz, skip-cert-verify: true, udp: true}
   - {name: 香港|08奈飞AZ广港电信隧道3, server: gzdx0.170203.xyz, port: 37250, type: trojan, password: 1ebd8d93-725c-407a-bdd7-81cbed414eac, sni: hkmax08.170203.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
@@ -120,6 +190,74 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
+      - 距离下次重置剩余：28 天
+      - 香港HKT 防失联
+      - 香港 01
+      - 香港 02
+      - 香港 03
+      - 香港 04
+      - 香港 05
+      - 香港 06
+      - 台湾 01
+      - 台湾 02
+      - 台湾 03
+      - 台湾 04
+      - 日本 01
+      - 日本 02
+      - 日本 03
+      - 日本 04
+      - 日本 05
+      - 韩国 首尔
+      - 韩国 春川
+      - 新加坡 01
+      - 新加坡 02
+      - 新加坡 03
+      - 新加坡 04
+      - 新加坡 05
+      - 美国 01
+      - 美国 02
+      - 美国 03
+      - 美国 04
+      - 印度 孟买
+      - 印度 海得拉巴
+      - 澳大利亚 悉尼
+      - 澳大利亚 墨尔本
+      - 阿联酋 迪拜
+      - 阿联酋 阿布扎比
+      - 沙特 01
+      - 沙特 02
+      - 以色列 01
+      - 以色列 02
+      - 南非 01
+      - 南非 02
+      - 德国 01
+      - 德国 02
+      - 法国 01
+      - 法国 02
+      - 英国 伦敦
+      - 英国 加的夫
+      - 意大利 01
+      - 意大利 02
+      - 西班牙 01
+      - 西班牙 02
+      - 瑞士 01
+      - 瑞士 02
+      - 荷兰 01
+      - 荷兰 02
+      - 瑞典 01
+      - 瑞典 02
+      - 土耳其 01
+      - 土耳其 02
+      - 俄罗斯 01
+      - 俄罗斯 02
+      - 加拿大 多伦多
+      - 加拿大 蒙特利尔
+      - 巴西 圣保罗
+      - 巴西 维涅杜
+      - 智利 01
+      - 智利 02
+      - 阿根廷 01
+      - 阿根廷 02
       - 中继 台湾 01
       - 中继 台湾 02
       - 中继 台湾 03
@@ -173,6 +311,7 @@ proxy-groups:
       - 新加坡|02|奈飞广日电信隧道2
       - 新加坡|02|奈飞广港电信隧道
       - 新加坡|04|奈飞广日电信隧道2
+      - 新加坡|04|奈飞广港电信隧道
       - 新加坡|03|广日电信隧道2
       - 新加坡|03|广港电信隧道4
       - 新加坡|01|广日电信隧道
@@ -185,7 +324,10 @@ proxy-groups:
       - 英国|01|广港电信隧道
       - 韩国|01直连
       - 韩国|02直连
+      - 印度|01|直连
       - 英国|02|直连
+      - 澳洲|01|直连
+      - 韩国|03直连
       - 日本|02|直连2
       - 日本|01|直连
       - 日本|03|直连2
@@ -200,24 +342,22 @@ proxy-groups:
       - 日本|02|奈飞湘日联通隧道
       - 日本|高速|01|广日电信隧道
       - 日本|高速|01|湘日联通隧道2
+      - 美国|01|直连
       - 美国|01|广港电信隧道0
-      - 美国|09广港电信隧道
       - 美国|02|广日电信隧道
       - 美国|03广日电信隧道
       - 美国|04RN广港电信隧道
-      - 香港|08奈飞AZ广港电信隧道(大带宽)
+      - 香港|08奈飞广港电信隧道(大带宽)
       - 香港|08奈飞广港电信隧道2(大带宽)
       - 香港|02奈飞广港电信隧道3
+      - 香港|02奈飞广港电信隧道2
       - 香港|04|奈飞广港电信隧道4(大带宽)
-      - 香港|04奈飞AZ广港电信隧道1(大带宽)
-      - 香港|05AZ广港电信隧道1
-      - 香港|02奈飞AZ广港电信隧道
+      - 香港|04奈飞广港电信隧道1(大带宽)
+      - 香港|05广港电信隧道1
+      - 香港|02奈飞广港电信隧道
       - 香港|05广港电信隧道3
       - 香港|07广日电信隧道
       - 香港|03|广港电信隧道
-      - 香港|01AZ海港电信隧道
-      - 香港|09AZ广港电信隧道
-      - 香港|09AZ广港电信隧道1
       - 香港|08奈飞AZ广港电信隧道3
   - name: ♻️ 自动选择
     type: url-test
@@ -225,6 +365,74 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - 距离下次重置剩余：28 天
+      - 香港HKT 防失联
+      - 香港 01
+      - 香港 02
+      - 香港 03
+      - 香港 04
+      - 香港 05
+      - 香港 06
+      - 台湾 01
+      - 台湾 02
+      - 台湾 03
+      - 台湾 04
+      - 日本 01
+      - 日本 02
+      - 日本 03
+      - 日本 04
+      - 日本 05
+      - 韩国 首尔
+      - 韩国 春川
+      - 新加坡 01
+      - 新加坡 02
+      - 新加坡 03
+      - 新加坡 04
+      - 新加坡 05
+      - 美国 01
+      - 美国 02
+      - 美国 03
+      - 美国 04
+      - 印度 孟买
+      - 印度 海得拉巴
+      - 澳大利亚 悉尼
+      - 澳大利亚 墨尔本
+      - 阿联酋 迪拜
+      - 阿联酋 阿布扎比
+      - 沙特 01
+      - 沙特 02
+      - 以色列 01
+      - 以色列 02
+      - 南非 01
+      - 南非 02
+      - 德国 01
+      - 德国 02
+      - 法国 01
+      - 法国 02
+      - 英国 伦敦
+      - 英国 加的夫
+      - 意大利 01
+      - 意大利 02
+      - 西班牙 01
+      - 西班牙 02
+      - 瑞士 01
+      - 瑞士 02
+      - 荷兰 01
+      - 荷兰 02
+      - 瑞典 01
+      - 瑞典 02
+      - 土耳其 01
+      - 土耳其 02
+      - 俄罗斯 01
+      - 俄罗斯 02
+      - 加拿大 多伦多
+      - 加拿大 蒙特利尔
+      - 巴西 圣保罗
+      - 巴西 维涅杜
+      - 智利 01
+      - 智利 02
+      - 阿根廷 01
+      - 阿根廷 02
       - 中继 台湾 01
       - 中继 台湾 02
       - 中继 台湾 03
@@ -278,6 +486,7 @@ proxy-groups:
       - 新加坡|02|奈飞广日电信隧道2
       - 新加坡|02|奈飞广港电信隧道
       - 新加坡|04|奈飞广日电信隧道2
+      - 新加坡|04|奈飞广港电信隧道
       - 新加坡|03|广日电信隧道2
       - 新加坡|03|广港电信隧道4
       - 新加坡|01|广日电信隧道
@@ -290,7 +499,10 @@ proxy-groups:
       - 英国|01|广港电信隧道
       - 韩国|01直连
       - 韩国|02直连
+      - 印度|01|直连
       - 英国|02|直连
+      - 澳洲|01|直连
+      - 韩国|03直连
       - 日本|02|直连2
       - 日本|01|直连
       - 日本|03|直连2
@@ -305,24 +517,22 @@ proxy-groups:
       - 日本|02|奈飞湘日联通隧道
       - 日本|高速|01|广日电信隧道
       - 日本|高速|01|湘日联通隧道2
+      - 美国|01|直连
       - 美国|01|广港电信隧道0
-      - 美国|09广港电信隧道
       - 美国|02|广日电信隧道
       - 美国|03广日电信隧道
       - 美国|04RN广港电信隧道
-      - 香港|08奈飞AZ广港电信隧道(大带宽)
+      - 香港|08奈飞广港电信隧道(大带宽)
       - 香港|08奈飞广港电信隧道2(大带宽)
       - 香港|02奈飞广港电信隧道3
+      - 香港|02奈飞广港电信隧道2
       - 香港|04|奈飞广港电信隧道4(大带宽)
-      - 香港|04奈飞AZ广港电信隧道1(大带宽)
-      - 香港|05AZ广港电信隧道1
-      - 香港|02奈飞AZ广港电信隧道
+      - 香港|04奈飞广港电信隧道1(大带宽)
+      - 香港|05广港电信隧道1
+      - 香港|02奈飞广港电信隧道
       - 香港|05广港电信隧道3
       - 香港|07广日电信隧道
       - 香港|03|广港电信隧道
-      - 香港|01AZ海港电信隧道
-      - 香港|09AZ广港电信隧道
-      - 香港|09AZ广港电信隧道1
       - 香港|08奈飞AZ广港电信隧道3
   - name: 📲 电报消息
     type: select
@@ -496,11 +706,15 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🚀 手动切换
   - name: 🇭🇰 香港节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
+      - 香港HKT 防失联
+      - 香港 01
+      - 香港 02
+      - 香港 03
+      - 香港 04
+      - 香港 05
+      - 香港 06
       - 中继 香港 01
       - 中继 香港 02
       - 中继 香港 03
@@ -512,26 +726,26 @@ proxy-groups:
       - 中继 香港 09
       - 中继 香港 10
       - 中继 香港 11
-      - 香港|08奈飞AZ广港电信隧道(大带宽)
+      - 香港|08奈飞广港电信隧道(大带宽)
       - 香港|08奈飞广港电信隧道2(大带宽)
       - 香港|02奈飞广港电信隧道3
+      - 香港|02奈飞广港电信隧道2
       - 香港|04|奈飞广港电信隧道4(大带宽)
-      - 香港|04奈飞AZ广港电信隧道1(大带宽)
-      - 香港|05AZ广港电信隧道1
-      - 香港|02奈飞AZ广港电信隧道
+      - 香港|04奈飞广港电信隧道1(大带宽)
+      - 香港|05广港电信隧道1
+      - 香港|02奈飞广港电信隧道
       - 香港|05广港电信隧道3
       - 香港|07广日电信隧道
       - 香港|03|广港电信隧道
-      - 香港|01AZ海港电信隧道
-      - 香港|09AZ广港电信隧道
-      - 香港|09AZ广港电信隧道1
       - 香港|08奈飞AZ广港电信隧道3
   - name: 🇯🇵 日本节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
+      - 日本 01
+      - 日本 02
+      - 日本 03
+      - 日本 04
+      - 日本 05
       - 隧道 日本Ⅰ
       - 隧道 日本Ⅱ
       - 北方中继 日本A
@@ -555,38 +769,42 @@ proxy-groups:
       - 日本|高速|01|广日电信隧道
       - 日本|高速|01|湘日联通隧道2
   - name: 🇺🇲 美国节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 150
+    type: select
     proxies:
+      - 美国 01
+      - 美国 02
+      - 美国 03
+      - 美国 04
       - 中继 美国 01
       - 中继 美国 02
       - 中继 美国 03
       - 中继 美国 04
       - 中继 美国 05
+      - 美国|01|直连
       - 美国|01|广港电信隧道0
-      - 美国|09广港电信隧道
       - 美国|02|广日电信隧道
       - 美国|03广日电信隧道
       - 美国|04RN广港电信隧道
   - name: 🇨🇳 台湾节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
+      - 台湾 01
+      - 台湾 02
+      - 台湾 03
+      - 台湾 04
       - 中继 台湾 01
       - 中继 台湾 02
       - 中继 台湾 03
       - 台湾|01奈飞广港电信隧道
       - 台湾|01奈飞广日电信隧道3
   - name: 🇸🇬 狮城节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
+      - 新加坡 01
+      - 新加坡 02
+      - 新加坡 03
+      - 新加坡 04
+      - 新加坡 05
       - 中继 新加坡 01
       - 中继 新加坡 02
       - 中继 新加坡 03
@@ -602,6 +820,7 @@ proxy-groups:
       - 新加坡|02|奈飞广日电信隧道2
       - 新加坡|02|奈飞广港电信隧道
       - 新加坡|04|奈飞广日电信隧道2
+      - 新加坡|04|奈飞广港电信隧道
       - 新加坡|03|广日电信隧道2
       - 新加坡|03|广港电信隧道4
       - 新加坡|01|广日电信隧道
@@ -609,13 +828,13 @@ proxy-groups:
       - 新加坡|01|海港电信隧道3
       - 新加坡|01|广港电信隧道4
   - name: 🇰🇷 韩国节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
+      - 韩国 首尔
+      - 韩国 春川
       - 韩国|01直连
       - 韩国|02直连
+      - 韩国|03直连
   - name: 🎥 奈飞节点
     type: select
     proxies:
@@ -624,15 +843,17 @@ proxy-groups:
       - 新加坡|02|奈飞广日电信隧道2
       - 新加坡|02|奈飞广港电信隧道
       - 新加坡|04|奈飞广日电信隧道2
+      - 新加坡|04|奈飞广港电信隧道
       - 台湾|01奈飞广港电信隧道
       - 台湾|01奈飞广日电信隧道3
       - 日本|02|奈飞湘日联通隧道
-      - 香港|08奈飞AZ广港电信隧道(大带宽)
+      - 香港|08奈飞广港电信隧道(大带宽)
       - 香港|08奈飞广港电信隧道2(大带宽)
       - 香港|02奈飞广港电信隧道3
+      - 香港|02奈飞广港电信隧道2
       - 香港|04|奈飞广港电信隧道4(大带宽)
-      - 香港|04奈飞AZ广港电信隧道1(大带宽)
-      - 香港|02奈飞AZ广港电信隧道
+      - 香港|04奈飞广港电信隧道1(大带宽)
+      - 香港|02奈飞广港电信隧道
       - 香港|08奈飞AZ广港电信隧道3
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
@@ -2665,14 +2886,13 @@ rules:
  - DOMAIN,gamer2-cds.cdn.hinet.net,📺 巴哈姆特
  - DOMAIN-SUFFIX,bahamut.com.tw,📺 巴哈姆特
  - DOMAIN-SUFFIX,gamer.com.tw,📺 巴哈姆特
+ - MATCH,ani.gamer.com.tw,📺 巴哈姆特
  - DOMAIN,p-bstarstatic.akamaized.net,📺 哔哩哔哩
  - DOMAIN,p.bstarstatic.com,📺 哔哩哔哩
  - DOMAIN,upos-bstar-mirrorakam.akamaized.net,📺 哔哩哔哩
  - DOMAIN,upos-bstar1-mirrorakam.akamaized.net,📺 哔哩哔哩
  - DOMAIN,upos-hz-mirrorakam.akamaized.net,📺 哔哩哔哩
  - DOMAIN-SUFFIX,acgvideo.com,📺 哔哩哔哩
- - DOMAIN-SUFFIX,bilibili.com,📺 哔哩哔哩
- - DOMAIN-SUFFIX,bilibili.tv,📺 哔哩哔哩
  - IP-CIDR,45.43.32.234/32,📺 哔哩哔哩,no-resolve
  - IP-CIDR,103.151.150.0/23,📺 哔哩哔哩,no-resolve
  - IP-CIDR,119.29.29.29/32,📺 哔哩哔哩,no-resolve
@@ -3221,6 +3441,7 @@ rules:
  - DOMAIN-SUFFIX,ablwang.com,🚀 节点选择
  - DOMAIN-SUFFIX,aboluowang.com,🚀 节点选择
  - DOMAIN-SUFFIX,about.google,🚀 节点选择
+ - DOMAIN-SUFFIX,about.me,🚀 节点选择
  - DOMAIN-SUFFIX,aboutgfw.com,🚀 节点选择
  - DOMAIN-SUFFIX,abs.edu,🚀 节点选择
  - DOMAIN-SUFFIX,acast.com,🚀 节点选择
@@ -3505,6 +3726,7 @@ rules:
  - DOMAIN-SUFFIX,baijie.org,🚀 节点选择
  - DOMAIN-SUFFIX,bailandaily.com,🚀 节点选择
  - DOMAIN-SUFFIX,baixing.me,🚀 节点选择
+ - DOMAIN-SUFFIX,baizhi.org,🚀 节点选择
  - DOMAIN-SUFFIX,bakgeekhome.tk,🚀 节点选择
  - DOMAIN-SUFFIX,banana-vpn.com,🚀 节点选择
  - DOMAIN-SUFFIX,band.us,🚀 节点选择
@@ -3743,6 +3965,7 @@ rules:
  - DOMAIN-SUFFIX,bullguard.com,🚀 节点选择
  - DOMAIN-SUFFIX,bullog.org,🚀 节点选择
  - DOMAIN-SUFFIX,bullogger.com,🚀 节点选择
+ - DOMAIN-SUFFIX,bumingbai.net,🚀 节点选择
  - DOMAIN-SUFFIX,bunbunhk.com,🚀 节点选择
  - DOMAIN-SUFFIX,busayari.com,🚀 节点选择
  - DOMAIN-SUFFIX,business-humanrights.org,🚀 节点选择
@@ -3916,6 +4139,7 @@ rules:
  - DOMAIN-SUFFIX,chinadigitaltimes.net,🚀 节点选择
  - DOMAIN-SUFFIX,chinaelections.org,🚀 节点选择
  - DOMAIN-SUFFIX,chinaeweekly.com,🚀 节点选择
+ - DOMAIN-SUFFIX,chinafile.com,🚀 节点选择
  - DOMAIN-SUFFIX,chinafreepress.org,🚀 节点选择
  - DOMAIN-SUFFIX,chinagate.com,🚀 节点选择
  - DOMAIN-SUFFIX,chinageeks.org,🚀 节点选择
@@ -4332,6 +4556,7 @@ rules:
  - DOMAIN-SUFFIX,dotvpn.com,🚀 节点选择
  - DOMAIN-SUFFIX,doub.io,🚀 节点选择
  - DOMAIN-SUFFIX,doubibackup.com,🚀 节点选择
+ - DOMAIN-SUFFIX,doublethinklab.org,🚀 节点选择
  - DOMAIN-SUFFIX,doubmirror.cf,🚀 节点选择
  - DOMAIN-SUFFIX,dougscripts.com,🚀 节点选择
  - DOMAIN-SUFFIX,douhokanko.net,🚀 节点选择
@@ -4891,6 +5116,7 @@ rules:
  - DOMAIN-SUFFIX,gamez.com.tw,🚀 节点选择
  - DOMAIN-SUFFIX,gamousa.com,🚀 节点选择
  - DOMAIN-SUFFIX,ganges.com,🚀 节点选择
+ - DOMAIN-SUFFIX,ganjing.com,🚀 节点选择
  - DOMAIN-SUFFIX,ganjingworld.com,🚀 节点选择
  - DOMAIN-SUFFIX,gaoming.net,🚀 节点选择
  - DOMAIN-SUFFIX,gaopi.net,🚀 节点选择
@@ -5427,6 +5653,7 @@ rules:
  - DOMAIN-SUFFIX,hhdcb3office.org,🚀 节点选择
  - DOMAIN-SUFFIX,hhthesakyatrizin.org,🚀 节点选择
  - DOMAIN-SUFFIX,hi-on.org.tw,🚀 节点选择
+ - DOMAIN-SUFFIX,hiccears.com,🚀 节点选择
  - DOMAIN-SUFFIX,hidden-advent.org,🚀 节点选择
  - DOMAIN-SUFFIX,hide.me,🚀 节点选择
  - DOMAIN-SUFFIX,hidecloud.com,🚀 节点选择
@@ -5515,6 +5742,7 @@ rules:
  - DOMAIN-SUFFIX,hmvdigital.com,🚀 节点选择
  - DOMAIN-SUFFIX,hnjhj.com,🚀 节点选择
  - DOMAIN-SUFFIX,hnntube.com,🚀 节点选择
+ - DOMAIN-SUFFIX,hojemacau.com.mo,🚀 节点选择
  - DOMAIN-SUFFIX,hola.com,🚀 节点选择
  - DOMAIN-SUFFIX,hola.org,🚀 节点选择
  - DOMAIN-SUFFIX,holymountaincn.com,🚀 节点选择
@@ -5539,6 +5767,7 @@ rules:
  - DOMAIN-SUFFIX,hostloc.com,🚀 节点选择
  - DOMAIN-SUFFIX,hotair.com,🚀 节点选择
  - DOMAIN-SUFFIX,hotav.tv,🚀 节点选择
+ - DOMAIN-SUFFIX,hotcoin.com,🚀 节点选择
  - DOMAIN-SUFFIX,hotels.cn,🚀 节点选择
  - DOMAIN-SUFFIX,hotfrog.com.tw,🚀 节点选择
  - DOMAIN-SUFFIX,hotgoo.com,🚀 节点选择
@@ -5595,6 +5824,7 @@ rules:
  - DOMAIN-SUFFIX,hulkshare.com,🚀 节点选择
  - DOMAIN-SUFFIX,hulu.com,🚀 节点选择
  - DOMAIN-SUFFIX,huluim.com,🚀 节点选择
+ - DOMAIN-SUFFIX,humanrightspressawards.org,🚀 节点选择
  - DOMAIN-SUFFIX,hung-ya.com,🚀 节点选择
  - DOMAIN-SUFFIX,hungerstrikeforaids.org,🚀 节点选择
  - DOMAIN-SUFFIX,huobi.co,🚀 节点选择
@@ -5991,6 +6221,7 @@ rules:
  - DOMAIN-SUFFIX,koranmandarin.com,🚀 节点选择
  - DOMAIN-SUFFIX,korenan2.com,🚀 节点选择
  - DOMAIN-SUFFIX,kqes.net,🚀 节点选择
+ - DOMAIN-SUFFIX,kraken.com,🚀 节点选择
  - DOMAIN-SUFFIX,krtco.com.tw,🚀 节点选择
  - DOMAIN-SUFFIX,ksdl.org,🚀 节点选择
  - DOMAIN-SUFFIX,ksnews.com.tw,🚀 节点选择
@@ -6383,6 +6614,7 @@ rules:
  - DOMAIN-SUFFIX,monitorchina.org,🚀 节点选择
  - DOMAIN-SUFFIX,monitorware.com,🚀 节点选择
  - DOMAIN-SUFFIX,monlamit.org,🚀 节点选择
+ - DOMAIN-SUFFIX,monocloud.me,🚀 节点选择
  - DOMAIN-SUFFIX,monster.com,🚀 节点选择
  - DOMAIN-SUFFIX,moodyz.com,🚀 节点选择
  - DOMAIN-SUFFIX,moon.fm,🚀 节点选择
@@ -6566,6 +6798,7 @@ rules:
  - DOMAIN-SUFFIX,newhighlandvision.com,🚀 节点选择
  - DOMAIN-SUFFIX,newipnow.com,🚀 节点选择
  - DOMAIN-SUFFIX,newlandmagazine.com.au,🚀 节点选择
+ - DOMAIN-SUFFIX,newmitbbs.com,🚀 节点选择
  - DOMAIN-SUFFIX,newnews.ca,🚀 节点选择
  - DOMAIN-SUFFIX,news100.com.tw,🚀 节点选择
  - DOMAIN-SUFFIX,newsancai.com,🚀 节点选择
@@ -6880,6 +7113,7 @@ rules:
  - DOMAIN-SUFFIX,pastie.org,🚀 节点选择
  - DOMAIN-SUFFIX,pathtosharepoint.com,🚀 节点选择
  - DOMAIN-SUFFIX,patreon.com,🚀 节点选择
+ - DOMAIN-SUFFIX,pawoo.net,🚀 节点选择
  - DOMAIN-SUFFIX,paxful.com,🚀 节点选择
  - DOMAIN-SUFFIX,pbs.org,🚀 节点选择
  - DOMAIN-SUFFIX,pbwiki.com,🚀 节点选择
@@ -7327,6 +7561,7 @@ rules:
  - DOMAIN-SUFFIX,samair.ru,🚀 节点选择
  - DOMAIN-SUFFIX,sambhota.org,🚀 节点选择
  - DOMAIN-SUFFIX,sandscotaicentral.com,🚀 节点选择
+ - DOMAIN-SUFFIX,sankakucomplex.com,🚀 节点选择
  - DOMAIN-SUFFIX,sankei.com,🚀 节点选择
  - DOMAIN-SUFFIX,sanmin.com.tw,🚀 节点选择
  - DOMAIN-SUFFIX,sans.edu,🚀 节点选择
@@ -8550,6 +8785,7 @@ rules:
  - DOMAIN-SUFFIX,weblagu.com,🚀 节点选择
  - DOMAIN-SUFFIX,webmproject.org,🚀 节点选择
  - DOMAIN-SUFFIX,webpack.de,🚀 节点选择
+ - DOMAIN-SUFFIX,webpkgcache.com,🚀 节点选择
  - DOMAIN-SUFFIX,webrtc.org,🚀 节点选择
  - DOMAIN-SUFFIX,webrush.net,🚀 节点选择
  - DOMAIN-SUFFIX,webs-tv.net,🚀 节点选择
