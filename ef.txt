@@ -5,7 +5,7 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 距离下次重置剩余：30 天, server: 219.78.227.27, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-hk.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 距离下次重置剩余：28 天, server: 219.78.227.27, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-hk.efyunpan.com, skip-cert-verify: true, udp: true}
   - {name: 香港HKT 防失联, server: 219.78.227.27, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-hk.efyunpan.com, skip-cert-verify: true, udp: true}
   - {name: 香港 01, server: dl-hk1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-hk.efyunpan.com, skip-cert-verify: true, udp: true}
   - {name: 香港 02, server: dl-hk2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-hk.efyunpan.com, skip-cert-verify: true, udp: true}
@@ -21,12 +21,14 @@ proxies:
   - {name: 日本 02, server: dl-jp2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-jp.efyunpan.com, skip-cert-verify: true, udp: true}
   - {name: 日本 03, server: dl-jp3.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-jp.efyunpan.com, skip-cert-verify: true, udp: true}
   - {name: 日本 04, server: dl-jp4.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-jp.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 日本 05, server: dl-jp5.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-jp.efyunpan.com, skip-cert-verify: true, udp: true}
   - {name: 韩国 首尔, server: dl-kr1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-ockrsl.efyunpan.com, skip-cert-verify: true, udp: true}
   - {name: 韩国 春川, server: dl-kr2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-ockrcc.efyunpan.com, skip-cert-verify: true, udp: true}
   - {name: 新加坡 01, server: dl-sg1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-sg.efyunpan.com, skip-cert-verify: true, udp: true}
   - {name: 新加坡 02, server: dl-sg2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-sg.efyunpan.com, skip-cert-verify: true, udp: true}
   - {name: 新加坡 03, server: dl-sg3.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-sg.efyunpan.com, skip-cert-verify: true, udp: true}
   - {name: 新加坡 04, server: dl-sg4.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-sg.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 05, server: dl-sg5.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-sg.efyunpan.com, skip-cert-verify: true, udp: true}
   - {name: 美国 01, server: dl-us1.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-us.xn--vur082k.cc, skip-cert-verify: true, udp: true}
   - {name: 美国 02, server: dl-us2.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-us.xn--vur082k.cc, skip-cert-verify: true, udp: true}
   - {name: 美国 03, server: dl-us3.efyunpan.com, port: 443, type: trojan, password: 26893213-f1d2-4205-b2d8-fa28b3657375, sni: data-us.xn--vur082k.cc, skip-cert-verify: true, udp: true}
@@ -87,7 +89,7 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 距离下次重置剩余：30 天
+      - 距离下次重置剩余：28 天
       - 香港HKT 防失联
       - 香港 01
       - 香港 02
@@ -103,12 +105,14 @@ proxy-groups:
       - 日本 02
       - 日本 03
       - 日本 04
+      - 日本 05
       - 韩国 首尔
       - 韩国 春川
       - 新加坡 01
       - 新加坡 02
       - 新加坡 03
       - 新加坡 04
+      - 新加坡 05
       - 美国 01
       - 美国 02
       - 美国 03
@@ -159,7 +163,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 距离下次重置剩余：30 天
+      - 距离下次重置剩余：28 天
       - 香港HKT 防失联
       - 香港 01
       - 香港 02
@@ -175,12 +179,14 @@ proxy-groups:
       - 日本 02
       - 日本 03
       - 日本 04
+      - 日本 05
       - 韩国 首尔
       - 韩国 春川
       - 新加坡 01
       - 新加坡 02
       - 新加坡 03
       - 新加坡 04
+      - 新加坡 05
       - 美国 01
       - 美国 02
       - 美国 03
@@ -396,10 +402,7 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🚀 手动切换
   - name: 🇭🇰 香港节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 香港HKT 防失联
       - 香港 01
@@ -409,50 +412,37 @@ proxy-groups:
       - 香港 05
       - 香港 06
   - name: 🇯🇵 日本节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 日本 01
       - 日本 02
       - 日本 03
       - 日本 04
+      - 日本 05
   - name: 🇺🇲 美国节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 150
+    type: select
     proxies:
       - 美国 01
       - 美国 02
       - 美国 03
       - 美国 04
   - name: 🇨🇳 台湾节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 台湾 01
       - 台湾 02
       - 台湾 03
       - 台湾 04
   - name: 🇸🇬 狮城节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 新加坡 01
       - 新加坡 02
       - 新加坡 03
       - 新加坡 04
+      - 新加坡 05
   - name: 🇰🇷 韩国节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
       - 韩国 首尔
       - 韩国 春川
@@ -2491,14 +2481,13 @@ rules:
  - DOMAIN,gamer2-cds.cdn.hinet.net,📺 巴哈姆特
  - DOMAIN-SUFFIX,bahamut.com.tw,📺 巴哈姆特
  - DOMAIN-SUFFIX,gamer.com.tw,📺 巴哈姆特
+ - MATCH,ani.gamer.com.tw,📺 巴哈姆特
  - DOMAIN,p-bstarstatic.akamaized.net,📺 哔哩哔哩
  - DOMAIN,p.bstarstatic.com,📺 哔哩哔哩
  - DOMAIN,upos-bstar-mirrorakam.akamaized.net,📺 哔哩哔哩
  - DOMAIN,upos-bstar1-mirrorakam.akamaized.net,📺 哔哩哔哩
  - DOMAIN,upos-hz-mirrorakam.akamaized.net,📺 哔哩哔哩
  - DOMAIN-SUFFIX,acgvideo.com,📺 哔哩哔哩
- - DOMAIN-SUFFIX,bilibili.com,📺 哔哩哔哩
- - DOMAIN-SUFFIX,bilibili.tv,📺 哔哩哔哩
  - IP-CIDR,45.43.32.234/32,📺 哔哩哔哩,no-resolve
  - IP-CIDR,103.151.150.0/23,📺 哔哩哔哩,no-resolve
  - IP-CIDR,119.29.29.29/32,📺 哔哩哔哩,no-resolve
@@ -3047,6 +3036,7 @@ rules:
  - DOMAIN-SUFFIX,ablwang.com,🚀 节点选择
  - DOMAIN-SUFFIX,aboluowang.com,🚀 节点选择
  - DOMAIN-SUFFIX,about.google,🚀 节点选择
+ - DOMAIN-SUFFIX,about.me,🚀 节点选择
  - DOMAIN-SUFFIX,aboutgfw.com,🚀 节点选择
  - DOMAIN-SUFFIX,abs.edu,🚀 节点选择
  - DOMAIN-SUFFIX,acast.com,🚀 节点选择
@@ -3331,6 +3321,7 @@ rules:
  - DOMAIN-SUFFIX,baijie.org,🚀 节点选择
  - DOMAIN-SUFFIX,bailandaily.com,🚀 节点选择
  - DOMAIN-SUFFIX,baixing.me,🚀 节点选择
+ - DOMAIN-SUFFIX,baizhi.org,🚀 节点选择
  - DOMAIN-SUFFIX,bakgeekhome.tk,🚀 节点选择
  - DOMAIN-SUFFIX,banana-vpn.com,🚀 节点选择
  - DOMAIN-SUFFIX,band.us,🚀 节点选择
@@ -3569,6 +3560,7 @@ rules:
  - DOMAIN-SUFFIX,bullguard.com,🚀 节点选择
  - DOMAIN-SUFFIX,bullog.org,🚀 节点选择
  - DOMAIN-SUFFIX,bullogger.com,🚀 节点选择
+ - DOMAIN-SUFFIX,bumingbai.net,🚀 节点选择
  - DOMAIN-SUFFIX,bunbunhk.com,🚀 节点选择
  - DOMAIN-SUFFIX,busayari.com,🚀 节点选择
  - DOMAIN-SUFFIX,business-humanrights.org,🚀 节点选择
@@ -3742,6 +3734,7 @@ rules:
  - DOMAIN-SUFFIX,chinadigitaltimes.net,🚀 节点选择
  - DOMAIN-SUFFIX,chinaelections.org,🚀 节点选择
  - DOMAIN-SUFFIX,chinaeweekly.com,🚀 节点选择
+ - DOMAIN-SUFFIX,chinafile.com,🚀 节点选择
  - DOMAIN-SUFFIX,chinafreepress.org,🚀 节点选择
  - DOMAIN-SUFFIX,chinagate.com,🚀 节点选择
  - DOMAIN-SUFFIX,chinageeks.org,🚀 节点选择
@@ -4158,6 +4151,7 @@ rules:
  - DOMAIN-SUFFIX,dotvpn.com,🚀 节点选择
  - DOMAIN-SUFFIX,doub.io,🚀 节点选择
  - DOMAIN-SUFFIX,doubibackup.com,🚀 节点选择
+ - DOMAIN-SUFFIX,doublethinklab.org,🚀 节点选择
  - DOMAIN-SUFFIX,doubmirror.cf,🚀 节点选择
  - DOMAIN-SUFFIX,dougscripts.com,🚀 节点选择
  - DOMAIN-SUFFIX,douhokanko.net,🚀 节点选择
@@ -4717,6 +4711,7 @@ rules:
  - DOMAIN-SUFFIX,gamez.com.tw,🚀 节点选择
  - DOMAIN-SUFFIX,gamousa.com,🚀 节点选择
  - DOMAIN-SUFFIX,ganges.com,🚀 节点选择
+ - DOMAIN-SUFFIX,ganjing.com,🚀 节点选择
  - DOMAIN-SUFFIX,ganjingworld.com,🚀 节点选择
  - DOMAIN-SUFFIX,gaoming.net,🚀 节点选择
  - DOMAIN-SUFFIX,gaopi.net,🚀 节点选择
@@ -5253,6 +5248,7 @@ rules:
  - DOMAIN-SUFFIX,hhdcb3office.org,🚀 节点选择
  - DOMAIN-SUFFIX,hhthesakyatrizin.org,🚀 节点选择
  - DOMAIN-SUFFIX,hi-on.org.tw,🚀 节点选择
+ - DOMAIN-SUFFIX,hiccears.com,🚀 节点选择
  - DOMAIN-SUFFIX,hidden-advent.org,🚀 节点选择
  - DOMAIN-SUFFIX,hide.me,🚀 节点选择
  - DOMAIN-SUFFIX,hidecloud.com,🚀 节点选择
@@ -5341,6 +5337,7 @@ rules:
  - DOMAIN-SUFFIX,hmvdigital.com,🚀 节点选择
  - DOMAIN-SUFFIX,hnjhj.com,🚀 节点选择
  - DOMAIN-SUFFIX,hnntube.com,🚀 节点选择
+ - DOMAIN-SUFFIX,hojemacau.com.mo,🚀 节点选择
  - DOMAIN-SUFFIX,hola.com,🚀 节点选择
  - DOMAIN-SUFFIX,hola.org,🚀 节点选择
  - DOMAIN-SUFFIX,holymountaincn.com,🚀 节点选择
@@ -5365,6 +5362,7 @@ rules:
  - DOMAIN-SUFFIX,hostloc.com,🚀 节点选择
  - DOMAIN-SUFFIX,hotair.com,🚀 节点选择
  - DOMAIN-SUFFIX,hotav.tv,🚀 节点选择
+ - DOMAIN-SUFFIX,hotcoin.com,🚀 节点选择
  - DOMAIN-SUFFIX,hotels.cn,🚀 节点选择
  - DOMAIN-SUFFIX,hotfrog.com.tw,🚀 节点选择
  - DOMAIN-SUFFIX,hotgoo.com,🚀 节点选择
@@ -5421,6 +5419,7 @@ rules:
  - DOMAIN-SUFFIX,hulkshare.com,🚀 节点选择
  - DOMAIN-SUFFIX,hulu.com,🚀 节点选择
  - DOMAIN-SUFFIX,huluim.com,🚀 节点选择
+ - DOMAIN-SUFFIX,humanrightspressawards.org,🚀 节点选择
  - DOMAIN-SUFFIX,hung-ya.com,🚀 节点选择
  - DOMAIN-SUFFIX,hungerstrikeforaids.org,🚀 节点选择
  - DOMAIN-SUFFIX,huobi.co,🚀 节点选择
@@ -5817,6 +5816,7 @@ rules:
  - DOMAIN-SUFFIX,koranmandarin.com,🚀 节点选择
  - DOMAIN-SUFFIX,korenan2.com,🚀 节点选择
  - DOMAIN-SUFFIX,kqes.net,🚀 节点选择
+ - DOMAIN-SUFFIX,kraken.com,🚀 节点选择
  - DOMAIN-SUFFIX,krtco.com.tw,🚀 节点选择
  - DOMAIN-SUFFIX,ksdl.org,🚀 节点选择
  - DOMAIN-SUFFIX,ksnews.com.tw,🚀 节点选择
@@ -6209,6 +6209,7 @@ rules:
  - DOMAIN-SUFFIX,monitorchina.org,🚀 节点选择
  - DOMAIN-SUFFIX,monitorware.com,🚀 节点选择
  - DOMAIN-SUFFIX,monlamit.org,🚀 节点选择
+ - DOMAIN-SUFFIX,monocloud.me,🚀 节点选择
  - DOMAIN-SUFFIX,monster.com,🚀 节点选择
  - DOMAIN-SUFFIX,moodyz.com,🚀 节点选择
  - DOMAIN-SUFFIX,moon.fm,🚀 节点选择
@@ -6392,6 +6393,7 @@ rules:
  - DOMAIN-SUFFIX,newhighlandvision.com,🚀 节点选择
  - DOMAIN-SUFFIX,newipnow.com,🚀 节点选择
  - DOMAIN-SUFFIX,newlandmagazine.com.au,🚀 节点选择
+ - DOMAIN-SUFFIX,newmitbbs.com,🚀 节点选择
  - DOMAIN-SUFFIX,newnews.ca,🚀 节点选择
  - DOMAIN-SUFFIX,news100.com.tw,🚀 节点选择
  - DOMAIN-SUFFIX,newsancai.com,🚀 节点选择
@@ -6706,6 +6708,7 @@ rules:
  - DOMAIN-SUFFIX,pastie.org,🚀 节点选择
  - DOMAIN-SUFFIX,pathtosharepoint.com,🚀 节点选择
  - DOMAIN-SUFFIX,patreon.com,🚀 节点选择
+ - DOMAIN-SUFFIX,pawoo.net,🚀 节点选择
  - DOMAIN-SUFFIX,paxful.com,🚀 节点选择
  - DOMAIN-SUFFIX,pbs.org,🚀 节点选择
  - DOMAIN-SUFFIX,pbwiki.com,🚀 节点选择
@@ -7153,6 +7156,7 @@ rules:
  - DOMAIN-SUFFIX,samair.ru,🚀 节点选择
  - DOMAIN-SUFFIX,sambhota.org,🚀 节点选择
  - DOMAIN-SUFFIX,sandscotaicentral.com,🚀 节点选择
+ - DOMAIN-SUFFIX,sankakucomplex.com,🚀 节点选择
  - DOMAIN-SUFFIX,sankei.com,🚀 节点选择
  - DOMAIN-SUFFIX,sanmin.com.tw,🚀 节点选择
  - DOMAIN-SUFFIX,sans.edu,🚀 节点选择
@@ -8376,6 +8380,7 @@ rules:
  - DOMAIN-SUFFIX,weblagu.com,🚀 节点选择
  - DOMAIN-SUFFIX,webmproject.org,🚀 节点选择
  - DOMAIN-SUFFIX,webpack.de,🚀 节点选择
+ - DOMAIN-SUFFIX,webpkgcache.com,🚀 节点选择
  - DOMAIN-SUFFIX,webrtc.org,🚀 节点选择
  - DOMAIN-SUFFIX,webrush.net,🚀 节点选择
  - DOMAIN-SUFFIX,webs-tv.net,🚀 节点选择
