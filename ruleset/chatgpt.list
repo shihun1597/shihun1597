@@ -1,5 +1,4 @@
 # ChatGpt
 USER-AGENT,openai*
 DOMAIN-SUFFIX,openai.com
-DOMAIN-SUFFIX,speedtest.net
 DOMAIN,chat.openai.com
