@@ -1,4 +1,3 @@
 # ChatGpt
-USER-AGENT,openai*
 DOMAIN-SUFFIX,openai.com
-DOMAIN,chat.openai.com
+
