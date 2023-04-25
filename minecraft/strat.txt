@@ -1,0 +1,135 @@
+Alien Arcadium Eco Strategy (written by LaPercy (Percy84), original idea by greaneye)
+A way for players to reach win the game (round 105) the most efficiently possible.
+Warning: The strategy is hard, even for experienced zombies players, you need a team that understands and follows the strategy well, good cohesion, and don't take Puncher.
+
+If you plan on winning, make sure you have at least 2.5h/2h30 !!
+Eco stands for economy, the goal is to get as much gold as possible.
+
+Important rules:
+- Never take Insta Kill
+- Never take The Puncher from the chest
+- Slimes are important, when they are fully grown, they give MUCH more gold
+- Double Golds are GODLY, if you can, save them when they are a lot of golems or slimes
+- Get Shopping Spree r6 or r7, if r5 you won't get any spree r25 nor r35 (you want to avoid that)
+
+To get as much gold as possible, you'll be using Pistol + Shotgun as MUCH as possible, they have the highest ratio of gold give per damage dealt (except flamethrower but it's too weak), and if you're in trouble, you may scarcely use a 3rd weapon or a skill, and that until you get Diamond Chestplate!
+
+Once you have the Diamond Chestplate, tell your team to s1 (save 1 zombie alive)!
+Roll for Rainbow Rifle (ultimate 3) + Zombie Zapper + Double Barrel Shotgun (ultimate 3) + Lightning rod Skill
+Once you're set, buy Extra Health when you can (5k, 10k, 20k, 50k, 100k)
+
+o1 (data provided by 93tillInfinity):
+- r40-64: 250 hp (Bombie + 10hp)
+- r64-100: 650 hp (Broodmother + 100 hp)
+- r102-105: 900hp (half of Herobrine or Wither), doesn't matter since they do no damage.
+
+The corners used:
+- Chest corner, at the chest (the block where you have the chest at your right and the wall at your left).
+- Ultimate (ult) corner, in the ultimate machine, the 1-block space.
+- Alternative (alt) corner, in Ferris Wheel, at the back window, opposite side of the iron bars.
+
+When you have N Giant (x-y-z) it means the N giants will spawn as a 1st wave of X giants, the second wave of giant will have Y giants and the 3rd one Z giants (n,x,y,z numbers).
+
+» Round 1-5: make sure to step back not to take Insta Kill
+» Round 6-7: Save the spree for the end of the round, open Roller Coaster.
+# Never replace Pistol or Shotgun. Roll once only. Don't take puncher.
+What you need is a 3rd gun (Rainbow Rifle, Double Barrel Shotgun or Zombie Zapper - best weapon to get), as well as Lightning Rod Skill (heal skill is fine in the mean time)
+
+» Round 8-14: Spread, kill zombies, nothing particular here, you can grow r10 slimes a bit, not important.
+» Round 15: Giant on last wave (when a few mobs left), not important to grow the slimes
+» Round 16-17: Grow slimes a bit. Open Ferris Wheel and ultimate Pistol and Shotgun.
+» Round 18: Camp at the Lucky Chest, grow slimes FULL size, for the scarce zombies that come, use pistol on them or shotgun aiming at the ground.
+» Round 19: Open Bumper Cars, buy Fast Revive, Quick Fire and at least Extra Health 1.
+Get to Extra Health 3 asap (don't buy higher until Diamond Chestplate is acquired)
+
+» Round 20: 2 Giants (1-1)
+» Round 21: Only time you may take insta kill  (this round give max ammo)
+» Round 22: 2 Giants (1-1)
+» Round 23: Chest corner, grow slimes.
+» Round 24: 3 Giants (1-1-1)
+» Round 25: Mega Blob
+» Round 26: Chest corner, only slimes round, grow them FULL size.
+
+Camp (near) chest corner unless it's specified otherwise.
+» Round 30: 4 Giants (1-1-2)
+» Round 33-34: You may grow slimes in perk corner preferably.
+» Round 35: Mega Magma
+» Round 36: 3 Giants (1-2), you can go middle for the first wave, there are clowns be careful, the first giant only spawn at the second wave
+» Round 37: 3 Giants (1-2)
+» Round 38: 3 Giants (1-2)
+» Round 39: 3 Giants (1-2), grow slimes. Aim at giants.
+
+Harder than r30-39, don't go too far from the chest or you'll make the entire team killed.
+» Round 40: 4 Giants (2-2) + 1 o1 (The Old one)
+Wait the death of the o1 for get out of corner, if it does not come, it's probably stuck (often in Bumper Cars), stay in a corner or go on a stair (like on the refill ammo, at the edge of the block) and the o1 will be sort of stuck.
+» Round 41: 4 Giants (2-2)
+» Round 42: 6 Giants (2-2-2)
+Now things start to get a little "spicy". Make sure to stay close to the chest.
+» Round 43: 6 Giants (2-2-2). Make sure to have 70+ ammo on the shotgun.
+Giga Slimes Round! Grow Slimes! FULL SIZE! Aim Giants!
+» Round 44: 9 Giants (3-3-3)
+» Round 45: 3 Giants (3). 2 old ones (2)! Go ultimate machine corner.
+» Round 46: 100% Golems. 1 Old One! Whole team camps in the Chest corner.
+» Round 47: 3 Giants (3). Make sure to have 70+ ammo on the shotgun.
+Giga Slimes Round! Grow Slimes! FULL SIZE! Aim Giants!
+» Round 48: Kill the creepers asap they do a lot of damage. 1 Old one!
+» Round 49: Clutch round, no giants, no o1, but tons of mobs and clowns.
+Dance for at least 20 seconds (dance = run among zombies while killing them asap), then go to Alt corner.
+
+From now on, mobs deal much more damage.
+The rounds you should be wary of in this block are 50, 55 and 58. Don't under-estimate.
+The new default corner is Ultimate Machine corner now.
+» Round 50: 4 Giants (2-2)
+» Round 51: 4 Giants (2-2), tons of Skeletons but they deal no damage.
+» Round 52: 4 Giants (2-2)
+CHEST CORNER. Giga Slimes Round! Grow Slimes! FULL SIZE! Aim Giants!
+» Round 53: 4 Giants (2-2). Tons of clowns
+ALT (better) OR ULT CORNER. Kill clowns and Giants asap!
+» Round 54: 4 Giants (2-2), now they are Rainbow giants!
+ALT (better) OR ULT CORNER. 2 o1 (1-1)! When the giants spawn, an o1 will arrive few seconds later, be careful!
+» Round 55: 5 Giants (1-1-1-1-1)  the o1 come with the last giant!!notice it
+» Round 56: Mega Blob, roll if you need and if someone does not have chestplate, let them solo this and the next round.
+» Round 57: Mega Magma.
+» Round 58: 6 Giants (3-3), 5 Old ones
+ALT (better) OR ULT CORNER: 2 o1! Kill the golems asap on the first wave!
+» Round 59: 13 o1! Just go on the ledge of a stair (you can spread 2-2) and kill them asap.
+» Round 60: Mini Space Blasters! A LOT!
+2 o1!
+
+
+Everyone should have Diamond Chestplate and be set. Now focus on surviving and buy Extra Health when you can!
+The rounds 61-70, are the same as 71-80, 81-90 and 91-100 (except r89 and r99).
+When you get revived or when 2-3 people are down, block (right click) with your sword to take less damage.
+1s or x1 means 61, 71, 81, 91 (same for 2s or x2 etc).
+1 person buys Frozen Bullets, replacing Quick Fire.
+
+
+» Round X1: Wolves and Magma cubes. Focus on wolves, kill them asap! Buy Quick Fire back (you'll understand for Round X0)
+» Round X2: Clown's party! Go near ALT corner. Wallshoot (if you know), just kill them asap (easiest rounds).
+» Round X3: Wolves and Creepers, don't let Creeper get close and kill the wolves.
+
+» Round X4: 3rd Hardest rounds. 1-2 player go in the front and kill the Worms asap, after 10-15 seconds, go backwards while shooting.
+Time lightning well, no giants but still very hard if you do bad.
+
+» Round X5: GIANTS. 2nd Hardest rounds. The X5s are the easiest rounds to lose one as a few mistakes can quickly lead to a loss of the game. They aim at the giants and old ones to slow them down. Corner when giants arrive. Use lightning when there is a clutch at the corner.
+
+» Round X6: Magma Cubes, Creeper and Bombs. Buy Quick Fire back.
+» Round X7: Fire lord zombies and Magma Cubes. Hard. Use lightning when a lot of zombies are near you.
+» Round X8: 3 o1s! Golems, Worms and Bombs.
+
+» Round X9: Go to Perk corner, you will likely have a lot of bugged Zombies so be extremly careful near the end of the round. You will likely see more alive zombies than what is written in the scoreboard, that means some zombies are bugged or fake and can only be killed by melee. Identify them and kill them before starting the next round.
+
+» Round X0: Hardest rounds! Giants and o1!
+1 player will focus the Iron Golems near the door, next to the window at the ultimate machine corner.
+1 player will dance, loops in Park Entrance near the stone slabs (Ferris, Bumper, Roller, Ferris), makes sure they have the old ones on them.
+1 player has Frozen Bullets and will focus the old ones on the dancer and will make sure to freeze the incoming Giants as well.
+
+
+» Round 101: Buy Quick Fire back. Replace Zapper by Shotgun. Everyone goes at middle, aim high, headshot the boss: World Ender (500 hp)
+Use everything, lightning, double barrel, rainbow rifle, shotgun. You MUST kill it under 5 seconds or you lose (not hard) but make sure to use lightning and double barrel at least.
+
+» Round 102-105: Just a random o1 that runs but does not do any damage, the reason of these rounds existing is unknown but they are here.
+
+Beating round 105: you win! Congratulations!
+The current World Record for Alien Arcadium fastest completion time is 1:17:54 and uses a different and more difficult strategy.
+CK
